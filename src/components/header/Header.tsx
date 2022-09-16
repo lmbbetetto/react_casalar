@@ -1,47 +1,20 @@
-import "./header.css";
-import logocasa from "../../assets/logocasa.png";
-import { useState } from "react";
-import { AnimatedHumburguerButton } from "./animatedHamburguerButton";
-import { Link } from "react-router-dom";
+import './styles.css'
+import logo from '../../assets/logo.png'
+import { useState } from 'react'
+import { AnimatedHumburguerButton } from './animatedHamburguerButton'
 
 function Header() {
-  const [active, setActive] = useState(false);
+
+  const [active, setActive] = useState(false)
 
   return (
     <>
-      <header className="desktop container header_container">
-        <Link to="/">
-          <img src={logocasa} alt="Casa Abrigo" className="logo__casa" />
-        </Link>
 
-        <div className="container header_menu">
-          <a>
-            <Link to="/">Início</Link>
-          </a>
-          <a>
-            <Link to="/sobre">Sobre</Link>
-          </a>
-          <a>
-            <Link to="/transparencia">Transparência</Link>
-          </a>
-          <a>
-            <Link to="/contato">Contato</Link>
-          </a>
-          <Link to="/ajude">
-            <button className="btn_doe">Apoie</button>
-          </Link>
-        </div>
-      </header>
-
-      <header className="mobile">
-        <Link to="/">
-          <img src={logocasa} alt="Logo Casa Lar" className="logo__casa" />
-        </Link>
-
+      <header className='mobile'>
         <button
-          className="hamburguer"
+          className='hamburguer'
           onClick={() => {
-            setActive(!active);
+            setActive(!active)
           }}
         >
           <AnimatedHumburguerButton active={active} />
@@ -49,27 +22,18 @@ function Header() {
         <div className={active ? "activeSidenav" : "sidenav"}>
           <div className="container_mobile">
             <div className="mobile_1">
-              <a>
-                <Link to="/">Início</Link>
-              </a>
-              <a>
-                <Link to="/sobre">Sobre</Link>
-              </a>
-              <a>
-                <Link to="/transparencia">Transparência</Link>
-              </a>
-              <a>
-                <Link to="/contato">Contato</Link>
-              </a>
-              <Link to="/ajude">
-                <button className="btn_doe">Apoie</button>
-              </Link>
+              <a>Início</a>
+              <a>Sobre</a>
+              <a>Transparência</a>
+              <a>Contato</a>
             </div>
           </div>
         </div>
+        <img src={logo} alt="Casa Abrigo" className="logo__casa" />
+        <button className='btn_doe'>Apoie</button>
       </header>
     </>
-  );
+  )
 }
 
 export default Header

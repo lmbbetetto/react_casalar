@@ -1,13 +1,41 @@
-import './footer.css'
+import "./styles.css";
+import logo from "../../assets/logo.png";
 
-function Footer() {
+import { BsFacebook } from 'react-icons/bs'
+import { BsInstagram } from 'react-icons/bs'
 
-    return (
-        <svg className='form' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-            <path fill="#FCEF15" fill-opacity="1" d="M0,32L24,58.7C48,85,96,139,144,138.7C192,139,240,85,288,85.3C336,85,384,139,432,181.3C480,224,528,256,576,245.3C624,235,672,181,720,176C768,171,816,213,864,240C912,267,960,277,1008,245.3C1056,213,1104,139,1152,90.7C1200,43,1248,21,1296,26.7C1344,32,1392,64,1416,80L1440,96L1440,320L1416,320C1392,320,1344,320,1296,320C1248,320,1200,320,1152,320C1104,320,1056,320,1008,320C960,320,912,320,864,320C816,320,768,320,720,320C672,320,624,320,576,320C528,320,480,320,432,320C384,320,336,320,288,320C240,320,192,320,144,320C96,320,48,320,24,320L0,320Z"></path>
-        </svg>
-    )
+export function Footer() {
+  return (
+    <>
+      <div className="container_footer">
+        <img src={logo} alt="Logo Casa Lar" className="logo_footer" />
+        <div className="menu_footer">
+          <a>Início</a>
+          <a>Sobre</a>
+          <a>Transparência</a>
+          <a>Contato</a>
+        </div>
 
+        <div className='socials'>
+            <a href="https://www.facebook.com/profile.php?id=100008390238048" target="_blank"><BsFacebook /></a>
+            <a href="https://www.instagram.com/projeto.cara/" target="_blank"><BsInstagram /></a>
+        </div>
+
+      </div>
+
+      <div className="copy">
+        <small>
+          &copy; Assiciação Casa Lar | Todos os direitos reservados.
+        </small>
+      </div>
+      <div className="copy">
+        <small>
+          Desenvolvido por{" "}
+          <a href="https://www.leonardobetetto.dev" target="_blank">
+            Leonardo Betetto
+          </a>
+        </small>
+      </div>
+    </>
+  );
 }
-
-export default Footer

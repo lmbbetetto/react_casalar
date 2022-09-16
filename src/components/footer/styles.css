@@ -1,0 +1,49 @@
+.container_footer {
+    width: 100%;
+    height: 19rem;
+    margin-top: 5.9rem;
+    padding: 2rem;
+
+    background: var(--color-white);
+}
+
+.logo_footer {
+    max-width: 9rem;
+    margin: 0 auto
+}
+
+.menu_footer {
+    display: flex;
+    flex-wrap: warp;
+    gap: 2rem;
+    justify-content: center;
+    margin-top: 1.6rem;
+}
+
+.menu_footer a {
+    color: var(--color-black);
+}
+
+.socials {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 4rem;
+}
+
+.socials a {
+    background: var(--color-blue-primary);
+    color: var(--color-white);
+    padding: 0.8rem;
+    border-radius: 2rem;
+    display: flex;
+    border: 1px solid transparent;
+    margin-top: 2rem;
+}
+
+.copy {
+    background: var(--color-white);
+    color: var(--color-black);
+
+    text-align: center;
+}

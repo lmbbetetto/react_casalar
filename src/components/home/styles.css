@@ -1,0 +1,26 @@
+.img_fundo {
+    position: relative;
+    z-index: -1;
+    filter: blur(1.8px);
+    /* opacity: 80%; */
+}
+
+.sobreHome {
+    width: 86%;
+    height: 23rem;
+    margin: -3rem auto;
+
+    background: var(--color-yellow);
+    border-radius: 2rem;
+    box-shadow: 5px 5px 30px rgba(0,0,0,0.5);
+}
+
+.sobre2Home {
+    display: grid;
+    grid-template-columns: 43% 43%;
+    gap: 2%;
+}
+
+.internaHome {
+    background: var(--color-yellow);
+}

@@ -10,16 +10,23 @@
 }
 
 :root {
-    --color-bg: #34348e;
-    --color-bg-variant: #5E8B7E;
-    --color-primary: #A7C4BC;
-    --color-primary-variant: rgba(223, 238, 234, 0.4);
+    --color-bg: #fff;
+    --color-bg-variant: #ebe3d2;
+    --color-pink-primary: #cf57b2;
+    --color-pink-variant: #ffb6c1;
+    --color-pink-variant1: #ff84bf;
     --color-white: #fff;
     --color-light: rgba(255, 255, 255, 0.6);
+    --color-yellow: #FCEF15;
+    --color-green: #028535;
+    --color-blue-primary: #00b1ff;
+    --color-blue-variant: #52d6ff;
+    --color-red: #ce0215;
+    --color-black: #000000;
 
     --transition: all 400ms ease;
 
-    --container-width-lg: 75%;
+    --container-width-lg: 80%;
     --container-width-md: 86%;
     --container-width-sm: 90%;
 }
@@ -30,10 +37,10 @@ html {
 
 body {
     font-family: 'Poppins', sans-serif;
-    /* background: var(--color-bg); */
+    background: var(--color-bg-variant);
     color: var(--color-white);
     line-height: 1.7;
-    /* background-image: url(./assets/bg-texture.png); */
+    background-image: url(./assets/bg-texture.png);
 }
 
 /* ============ ESTILOS GERAIS ============ */
@@ -62,11 +69,11 @@ section {
 section>h2,
 section>h5 {
     text-align: center;
-    color: var(--color-light);
+    color: var(--color-blue-primary);
 }
 
 section>h2 {
-    color: var(--color-primary);
+    color: var(--color-blue-primary);
     margin-bottom: 3rem;
 }
 
@@ -75,12 +82,20 @@ section>h2 {
 }
 
 a {
-    color: var(--color-primary);
+    color: var(--color-blue-primary);
     transition: var(--transition);
 }
 
+.footer a:hover {
+    color: var(--color-blue-variant);
+}
+
+.contact__option a:hover {
+    color: var(--color-blue-variant);
+}
+
 a:hover {
-    color: var(--color-white);
+    color: var(--color-blue-variant);
 }
 
 a:link {
@@ -90,22 +105,78 @@ a:link {
 .btn {
     width: max-content;
     display: inline-block;
-    color: var(--color-primary);
+    color: var(--color-white);
     padding: 0.75rem 1.2rem;
-    border-radius: 0.4rem;
+    border-radius: 2rem;
     cursor: pointer;
-    border: 1px solid var(--color-primary);
+
     transition: var(--transition);
 }
 
+.btn_doe {
+    width: max-content;
+    display: inline-block;
+    background: var(--color-red);
+    color: var(--color-white);
+    padding: 0.75rem 1.2rem;
+    border-radius: 2rem;
+    cursor: pointer;
+    letter-spacing: 1.5px;
+
+    transition: var(--transition);
+}
+
+.btn_doe:hover {
+    background: var(--color-pink-variant);
+    color: var(--color-white);
+    border-color: transparent;
+}
+
+.btn_green {
+    width: max-content;
+    display: inline-block;
+    background: var(--color-pink-primary);
+    color: var(--color-white);
+    padding: 0.75rem 1.2rem;
+    border-radius: 2rem;
+    cursor: pointer;
+
+    transition: var(--transition);
+}
+
+.btn_green:hover {
+    background: var(--color-pink-variant);
+    color: var(--color-white);
+    border-color: transparent;
+}
+
+.btn-transparencia {
+    width: max-content;
+    display: inline-block;
+    background: var(--color-pink-variant);
+    color: var(--color-white);
+    border: 1.3px solid var(--color-white);
+    padding: 0.75rem 1.2rem;
+    border-radius: 2rem;
+    cursor: pointer;
+
+    transition: var(--transition);
+}
+
+.btn-transparencia:hover {
+    background: var(--color-blue-variant);
+    color: var(--color-white);
+    border-color: transparent;
+}
+
 .btn:hover {
-    background: #FCEF15;
+    background: var(--color-white);
     color: var(--color-bg);
     border-color: transparent;
 }
 
 .btn-primary {
-    background: var(--color-primary);
+    background: var(--color-yellow);
     color: var(--color-bg);
 }
 
