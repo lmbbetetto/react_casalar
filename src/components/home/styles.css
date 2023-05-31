@@ -2,16 +2,16 @@
     position: relative;
     z-index: -1;
     filter: blur(1.8px);
-    /* opacity: 80%; */
 }
 
 .sobreHome {
     width: 86%;
     height: 23rem;
     margin: -3rem auto;
+    padding: 2rem;
 
     background: var(--color-yellow);
-    border-radius: 2rem;
+    border-radius: 30px;
     box-shadow: 5px 5px 30px rgba(0,0,0,0.5);
 }
 
@@ -19,8 +19,38 @@
     display: grid;
     grid-template-columns: 43% 43%;
     gap: 2%;
+    display: flex;
+    justify-content: center;
 }
 
 .internaHome {
     background: var(--color-yellow);
+    width: 42%;
+    border-radius: 30px;
+    padding: 2rem;
+    color: var(--color-black);
+
+    box-shadow: 5px 5px 30px rgba(0,0,0,0.5);
+}
+
+.internaHome h1 {
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.btn-conf {
+    width: 6rem;
+    height: 2rem;
+    border-radius: 15px;
+    background: var(--color-green);
+    color: var(--color-white);
+    font-weight: bold;
+    cursor: pointer;
+    transition: var(--transition);
+    margin-top: 2rem;
+}
+
+.btn-conf:hover {
+    width: 8rem;
 }

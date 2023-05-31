@@ -1,0 +1,17 @@
+.headerNot {
+    width: 100%;
+    height: 20rem;
+    background: url(../../assets/fundo_home.jpg) no-repeat center;
+    background-size: 100%;
+    filter: blur(1.8px);
+}
+
+.headerNot h1 {
+    color: black;
+}
+
+.container {
+    max-width: 86%;
+    margin: 0 auto;
+    height: 100vh;
+}
