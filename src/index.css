@@ -22,6 +22,7 @@
     --color-blue-primary: #00b1ff;
     --color-blue-variant: #52d6ff;
     --color-red: #ce0215;
+    --color-red-secundary: #96000f;
     --color-black: #000000;
 
     --transition: all 400ms ease;
@@ -81,20 +82,11 @@ section>h2 {
     color: var(--color-light);
 }
 
-a {
-    color: var(--color-blue-primary);
-    transition: var(--transition);
-}
-
 .footer a:hover {
     color: var(--color-blue-variant);
 }
 
 .contact__option a:hover {
-    color: var(--color-blue-variant);
-}
-
-a:hover {
     color: var(--color-blue-variant);
 }
 
@@ -111,28 +103,6 @@ a:link {
     cursor: pointer;
 
     transition: var(--transition);
-}
-
-.btn_doe {
-    position: absolute;
-    width: 110px;
-    display: inline-block;
-    background: var(--color-red);
-    color: var(--color-white);
-    padding: 0.75rem 1.2rem;
-    right: 5.5rem;
-    bottom: 1.1rem;
-    border-radius: 1rem;
-    cursor: pointer;
-    letter-spacing: 1.5px;
-
-    transition: var(--transition);
-}
-
-.btn_doe:hover {
-    background: var(--color-pink-variant);
-    color: var(--color-white);
-    border-color: transparent;
 }
 
 .btn_green {

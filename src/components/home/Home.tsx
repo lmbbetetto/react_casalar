@@ -2,6 +2,7 @@ import "./styles.css";
 import imgFundo from "../../assets/fundo_home.jpg";
 
 import { Link } from 'react-router-dom'
+import { CardNoticia } from "../cardNoticia";
 
 export function Home() {
   return (
@@ -13,13 +14,17 @@ export function Home() {
 
       <section className="sobre2Home">
         <div className="internaHome">
-          <h1>Notícias</h1>
-          <p>Confira as ultimas notícias da Casa Lar.</p>
-          <div className="botao">
-            <Link to="/noticias"><button className="btn-conf">Confira</button></Link>
+          <div className="titulo">
+            <h1>Últimas notícias</h1>
+          </div>
+          <div className="cards">
+            <CardNoticia />
+            <CardNoticia />
+            <CardNoticia />
+            <CardNoticia />
+            <CardNoticia />
           </div>
         </div>
-        <div className="internaHome"></div>
       </section>
     </>
   );

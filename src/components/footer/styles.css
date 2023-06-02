@@ -22,6 +22,12 @@
 
 .menu_footer a {
     color: var(--color-black);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.menu_footer a:hover {
+    color: var(--color-blue-primary);
 }
 
 .socials {
@@ -46,4 +52,8 @@
     color: var(--color-black);
 
     text-align: center;
+}
+
+.copy a {
+    color: var(--color-blue-primary);
 }

@@ -1,0 +1,41 @@
+.container {
+    max-width: 15rem;
+    margin: 0 auto;
+}
+
+.container h1 {
+    max-width: 90%;
+    text-align: center;
+    font-size: 18px;
+}
+
+.container img {
+    border-radius: 15px;
+    margin-bottom: 1rem;
+}
+
+.btn {
+    width: 7rem;
+    height: 2rem;
+    border-radius: 15px;
+    font-weight: bold;
+    background: var(--color-green);
+    color: var(--color-white);
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.btn:hover {
+    width: 10rem;
+}
+
+.botao {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+.titulo {
+    display: flex;
+    justify-content: center;
+}

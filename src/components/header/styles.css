@@ -1,34 +1,54 @@
+.containerMenu {
+  background: var(--color-white);
+}
+
+.menu {
+  max-width: 86%;
+  height: 75px;
+  margin: 0 auto;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .logo__casa {
-    max-width: 100px;
-    margin: 0 auto;
-  }
+    max-width: 9rem;
+    position: relative;
+    top: 1.5rem;
+}
 
-  .header_menu button {
-    font-weight: bold;
-  }
+.itensMenu {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 2rem;
+}
 
-  .container_mobile {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
+.itensMenu a {
+  color: var(--color-black);
+  transition: 0.2s;
+  cursor: pointer;
+}
 
-    padding: 2rem 7rem 0 0;
-  }
+.itensMenu a:hover {
+  color: var(--color-blue-primary);
+}
 
-  .container_mobile button {
-    font-weight: bold;
-  }
+.btn_doe {
+  width: 6rem;
+  height: 2.3rem;
+  background: var(--color-red);
+  color: var(--color-white);
+  border-radius: 30px;
+  cursor: pointer;
+  letter-spacing: 1px;
+  font-weight: bold;
+  border: none;
 
-  .mobile_1 {
-    display: flex;
-    flex-direction: column;
+  transition: var(--transition);
+}
 
-    gap: 2rem;
-
-    max-width: 150px;
-    width: 100%;
-  }
-
-  .mobile_1 a {
-    color: var(--color-black)
-  }
+.btn_doe:hover {
+  background: var(--color-red-secundary);
+}

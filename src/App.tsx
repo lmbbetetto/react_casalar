@@ -1,5 +1,4 @@
 import { useState } from 'react'
-import { Container } from "./homeStyles";
 import { Route, Routes, Link } from "react-router-dom";
 
 import Header from './components/header/Header'
@@ -11,8 +10,7 @@ function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <Container>
-
+    <>
       <Header />
 
       <Routes>
@@ -21,8 +19,7 @@ function App() {
       </Routes>
 
       <Footer />
-
-    </Container>
+    </>
   )
 }
 
