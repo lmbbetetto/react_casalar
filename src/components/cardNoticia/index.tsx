@@ -1,6 +1,7 @@
 import style from './styles.module.css'
-
 import IMG from '../../assets/fundo_home.jpg'
+
+import { Link } from 'react-router-dom'
 
 export function CardNoticia() {
     return (
@@ -11,7 +12,7 @@ export function CardNoticia() {
                     <h1>What is Lorem Ipsum?</h1>
                 </div>
                 <div className={style.botao}>
-                    <button className={style.btn}>Confira</button>
+                    <Link to="/noticias"><button className={style.btn}>Confira</button></Link>
                 </div>
             </div>
         </>

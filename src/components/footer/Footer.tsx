@@ -1,6 +1,7 @@
 import "./styles.css";
-import logo from "../../assets/logo.png";
+import { Link } from "react-router-dom";
 
+import logo from "../../assets/logo.png";
 import { BsFacebook } from 'react-icons/bs'
 import { BsInstagram } from 'react-icons/bs'
 
@@ -8,9 +9,9 @@ export function Footer() {
   return (
     <>
       <div className="container_footer">
-        <img src={logo} alt="Logo Casa Lar" className="logo_footer" />
+        <Link to="/"><img src={logo} alt="Logo Casa Lar" className="logo_footer" /></Link>
         <div className="menu_footer">
-          <a>Início</a>
+          <Link to="/"><a>Início</a></Link>
           <a>Sobre</a>
           <a>Transparência</a>
           <a>Notícias</a>

@@ -1,6 +1,8 @@
 import './styles.css'
 import LOGO from '../../assets/logo.png'
 
+import { Link } from 'react-router-dom'
+
 function Header() {
 
   return (
@@ -8,10 +10,10 @@ function Header() {
       <div className='containerMenu'>
         <header className='menu'>
           <div>
-            <img src={LOGO} alt="Logo Casa Lar" className='logo__casa' />
+            <Link to="/"><img src={LOGO} alt="Logo Casa Lar" className='logo__casa' /></Link>
           </div>
           <div className="itensMenu">
-            <a>Início</a>
+            <Link to="/"><a>Início</a></Link>
             <a>Sobre</a>
             <a>Transparência</a>
             <a>Notícias</a>
