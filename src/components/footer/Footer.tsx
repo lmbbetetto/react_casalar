@@ -13,12 +13,13 @@ export function Footer() {
           <a>Início</a>
           <a>Sobre</a>
           <a>Transparência</a>
+          <a>Notícias</a>
           <a>Contato</a>
         </div>
 
         <div className='socials'>
-            <a href="https://www.facebook.com/profile.php?id=100008390238048" target="_blank"><BsFacebook /></a>
-            <a href="https://www.instagram.com/projeto.cara/" target="_blank"><BsInstagram /></a>
+          <a href="https://www.facebook.com/profile.php?id=100008390238048" target="_blank"><BsFacebook /></a>
+          <a href="https://www.instagram.com/projeto.cara/" target="_blank"><BsInstagram /></a>
         </div>
 
       </div>

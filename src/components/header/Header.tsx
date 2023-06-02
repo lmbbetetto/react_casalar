@@ -14,6 +14,7 @@ function Header() {
             <a>Início</a>
             <a>Sobre</a>
             <a>Transparência</a>
+            <a>Notícias</a>
             <a>Contato</a>
             <button className='btn_doe'>Apoie</button>
           </div>
