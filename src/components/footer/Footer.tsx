@@ -10,12 +10,16 @@ export function Footer() {
     <>
       <div className="container_footer">
         <Link to="/"><img src={logo} alt="Logo Casa Lar" className="logo_footer" /></Link>
-        <div className="menu_footer">
-          <Link to="/"><a>Início</a></Link>
-          <a>Sobre</a>
-          <a>Transparência</a>
-          <a>Notícias</a>
-          <a>Contato</a>
+        <div>
+          <nav className="menu_footer">
+            <ul>
+              <Link to="/"><li>Início</li></Link>
+              <Link to="/sobre"><li>Sobre</li></Link>
+              <li>Transparência</li>
+              <Link to="/noticias"><li>Notícias</li></Link>
+              <li>Contato</li>
+            </ul>
+          </nav>
         </div>
 
         <div className='socials'>

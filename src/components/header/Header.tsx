@@ -12,13 +12,18 @@ function Header() {
           <div>
             <Link to="/"><img src={LOGO} alt="Logo Casa Lar" className='logo__casa' /></Link>
           </div>
-          <div className="itensMenu">
-            <Link to="/"><a>Início</a></Link>
-            <a>Sobre</a>
-            <a>Transparência</a>
-            <a>Notícias</a>
-            <a>Contato</a>
-            <button className='btn_doe'>Apoie</button>
+          <div>
+            <nav className="itensMenu">
+              <ul>
+                <Link to="/"><li>Início</li></Link>
+                <Link to="/sobre"><li>Sobre</li></Link>
+                <li>Transparência</li>
+                <Link to="/noticias"><li>Notícias</li></Link>
+                <li>Contato</li>
+                <button className='btn_doe'>Apoie</button>
+
+              </ul>
+            </nav>
           </div>
         </header>
       </div>

@@ -1,5 +1,5 @@
 import style from './styles.module.css'
-import IMG from '../../assets/fundo_home.jpg'
+import IMG from '../../../assets/fundo_home.jpg'
 
 export function Noticias() {
     return (

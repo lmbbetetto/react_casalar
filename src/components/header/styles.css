@@ -18,20 +18,20 @@
     top: 1.4rem;
 }
 
-.itensMenu {
+.itensMenu ul{
   display: flex;
   flex-direction: row;
   align-items: center;
   gap: 2rem;
 }
 
-.itensMenu a {
+.itensMenu li {
   color: var(--color-black);
   transition: 0.2s;
   cursor: pointer;
 }
 
-.itensMenu a:hover {
+.itensMenu li:hover {
   color: var(--color-blue-primary);
 }
 
