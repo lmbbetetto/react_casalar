@@ -2,8 +2,9 @@ import './styles.css'
 import LOGO from '../../assets/logo.png'
 
 import { Link } from 'react-router-dom'
+import { FaHeart } from 'react-icons/fa'
 
-function Header() {
+export function Header() {
 
   return (
     <>
@@ -17,11 +18,10 @@ function Header() {
               <ul>
                 <Link to="/"><li>Início</li></Link>
                 <Link to="/sobre"><li>Sobre</li></Link>
-                <li>Transparência</li>
+                <Link to="/transparencia"><li>Transparência</li></Link>
                 <Link to="/noticias"><li>Notícias</li></Link>
-                <li>Contato</li>
-                <button className='btn_doe'>Apoie</button>
-
+                <Link to="/contato"><li>Contato</li></Link>
+                <Link to="/apoie"><button className='btn_doe'><FaHeart size={18}/> Apoie</button></Link>
               </ul>
             </nav>
           </div>
@@ -30,5 +30,3 @@ function Header() {
     </>
   )
 }
-
-export default Header

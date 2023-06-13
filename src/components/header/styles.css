@@ -13,12 +13,12 @@
 }
 
 .logo__casa {
-    max-width: 6.5rem;
-    position: relative;
-    top: 1.4rem;
+  max-width: 6.5rem;
+  position: relative;
+  top: 1.4rem;
 }
 
-.itensMenu ul{
+.itensMenu ul {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -36,8 +36,14 @@
 }
 
 .btn_doe {
-  width: 6rem;
-  height: 2.3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+
+  /* width: 6rem;
+  height: 2.3rem; */
+  padding: 0.6rem 1rem;
   background: var(--color-red);
   color: var(--color-white);
   border-radius: 30px;

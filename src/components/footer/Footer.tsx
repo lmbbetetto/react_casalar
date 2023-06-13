@@ -15,9 +15,9 @@ export function Footer() {
             <ul>
               <Link to="/"><li>Início</li></Link>
               <Link to="/sobre"><li>Sobre</li></Link>
-              <li>Transparência</li>
+              <Link to="/transparencia"><li>Transparência</li></Link>
               <Link to="/noticias"><li>Notícias</li></Link>
-              <li>Contato</li>
+              <Link to="/contato"><li>Contato</li></Link>
             </ul>
           </nav>
         </div>

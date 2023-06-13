@@ -1,0 +1,70 @@
+.container {
+    max-width: 86%;
+    margin: 4rem auto 0 auto;
+    padding: 3rem;
+    background: var(--color-white);
+    border-radius: 30px;
+}
+
+.titulo {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 6rem;
+}
+
+.titulo h1 {
+    font-size: 35px;
+    font-weight: bold;
+    color: var(--color-black);
+}
+
+.titulo h1:after {
+    content: "";
+    display: block;
+    width: 5rem;
+    height: 2.5px;
+    background: var(--color-black);
+    margin: 0 auto;
+    border-radius: 3rem;
+}
+
+.contact {
+    max-width: 60%;
+    width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 70% 40%;
+    color: var(--color-black);
+}
+
+.contact section {
+    margin: 0;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.card article {
+    width: 60%;
+    padding: 3rem;
+    background: var(--color-green);
+    border-radius: 30px;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.card article h1 {
+    color: var(--color-white);
+    font-weight: bold;
+    text-align: center;
+    font-size: 15px;
+}
+
+.card svg {
+    margin: 0;
+}
