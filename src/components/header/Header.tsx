@@ -21,7 +21,7 @@ export function Header() {
                 <Link to="/transparencia"><li>Transparência</li></Link>
                 <Link to="/noticias"><li>Notícias</li></Link>
                 <Link to="/contato"><li>Contato</li></Link>
-                <Link to="/apoie"><button className='btn_doe'><FaHeart size={18}/> Apoie</button></Link>
+                <Link to="/apoie"><button className='btn_doe'><FaHeart size={15}/> Apoie</button></Link>
               </ul>
             </nav>
           </div>

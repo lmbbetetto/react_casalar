@@ -11,6 +11,7 @@
     border-radius: 30px;
     padding: 4rem 3rem;
     color: var(--color-black);
+    box-shadow: 5px 5px 30px rgba(0,0,0,0.34);
 }
 
 .card:last-child {

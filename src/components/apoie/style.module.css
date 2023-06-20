@@ -1,0 +1,47 @@
+.container {
+    max-width: 86%;
+    margin: 4rem auto 0 auto;
+    padding: 3rem;
+    /* background: var(--color-green); */
+    border-radius: 30px;
+}
+
+.apoie_column {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+.block {
+    background: var(--color-white);
+    border-radius: 30px;
+    margin-top: 2rem;
+
+    padding: 2rem 2rem 2rem 2rem;
+    box-shadow: 5px 5px 30px rgba(0,0,0,0.34);
+
+    transition: var(--transition);
+}
+
+.block strong {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: var(--color-green);
+    font-size: 1.5rem;
+}
+
+.block p {
+    text-align: center;
+    color: var(--color-black);
+}
+
+.icon_apoie {
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 1rem;
+
+    display: flex;
+    justify-content: center;
+}
