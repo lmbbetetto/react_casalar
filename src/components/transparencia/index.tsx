@@ -1,8 +1,23 @@
+import { CardTransparencia } from './cardTransparencia'
 import style from './style.module.css'
-import { MdOutlinePictureAsPdf } from 'react-icons/md'
+
+import pdf1 from '../../assets/transparencia/ASSOCIACAO CASA LAR - BP 2022_ASSINADO.pdf'
+import pdf2 from '../../assets/transparencia/ATA ALTERAÇÃO E CONSOLIDAÇÃO 10º ESTATUTO - nov 2022.pdf'
 
 
 export function Transparencia() {
+
+    const cards = [
+        {
+            title: 'ASSOCIACAO CASA LAR - BP 2022_ASSINADO',
+            link: pdf1,
+        },
+        {
+            title: 'ATA ALTERAÇÃO E CONSOLIDAÇÃO 10º ESTATUTO - nov 2022',
+            link: pdf2,
+        },
+    ]
+
     return (
         <>
             <div className={style.container}>
@@ -11,23 +26,15 @@ export function Transparencia() {
                 </div>
 
                 <div className={style.cards}>
-                    <section className={style.card}>
-                        <MdOutlinePictureAsPdf color='black' size={60} />
-                        <h1>What is Lorem Ipsum?</h1>
-                        <a href="" target='_blank'>PDF</a>
-                    </section>
-
-                    <section className={style.card}>
-                        <MdOutlinePictureAsPdf color='black' size={60} />
-                        <h1>What is Lorem Ipsum?</h1>
-                        <a href="" target='_blank'>PDF</a>
-                    </section>
-
-                    <section className={style.card}>
-                        <MdOutlinePictureAsPdf color='black' size={60} />
-                        <h1>What is Lorem Ipsum?</h1>
-                        <a href="" target='_blank'>PDF</a>
-                    </section>
+                    {
+                        cards.map((component, index) => (
+                            <CardTransparencia 
+                                key={index}
+                                title={component.title}
+                                link={component.link}
+                            />
+                        ))
+                    }
                 </div>
             </div>
         </>

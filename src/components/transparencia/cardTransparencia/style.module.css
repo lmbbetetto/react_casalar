@@ -1,0 +1,41 @@
+.card {
+    margin: 0;
+    padding: 2.5rem;
+    background: var(--color-green);
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.card svg {
+    margin: 0 auto;
+    margin-bottom: 1.5rem;
+}
+
+.card h1 {
+    font-size: 20px;
+    color: var(--color-white);
+    margin-bottom: 2rem;
+}
+
+.btn {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    margin-top: auto;
+}
+
+.btn a {
+    padding: 0.6rem 3rem;
+    background: var(--color-red);
+    color: var(--color-white);
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 30px;
+    transition: 0.2s;
+}
+
+.btn a:hover {
+    padding: 0.6rem 5rem;
+}
