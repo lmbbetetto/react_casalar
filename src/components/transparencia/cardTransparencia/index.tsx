@@ -10,10 +10,10 @@ export const CardTransparencia: React.FC<cardProps> = (props) => {
     return (
         <>
             <section className={style.card}>
-                <MdOutlinePictureAsPdf color='white' size={60} />
+                <MdOutlinePictureAsPdf color='black' size={60} />
                 <h1>{props.title}</h1>
                 <div className={style.btn}>
-                    <a href={props.link} target='_blank'>PDF</a>
+                    <a href={props.link} target='_blank'><button>PDF</button></a>
                 </div>
             </section>
         </>

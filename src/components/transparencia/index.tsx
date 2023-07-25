@@ -3,6 +3,7 @@ import style from './style.module.css'
 
 import pdf1 from '../../assets/transparencia/ASSOCIACAO CASA LAR - BP 2022_ASSINADO.pdf'
 import pdf2 from '../../assets/transparencia/ATA ALTERAÇÃO E CONSOLIDAÇÃO 10º ESTATUTO - nov 2022.pdf'
+import pdf3 from '../../assets/transparencia/Aprendizes - RP 10 3º quadr..pdf'
 
 
 export function Transparencia() {
@@ -11,6 +12,10 @@ export function Transparencia() {
         {
             title: 'ASSOCIACAO CASA LAR - BP 2022_ASSINADO',
             link: pdf1,
+        },
+        {
+            title: 'ATA ALTERAÇÃO E CONSOLIDAÇÃO 10º ESTATUTO - nov 2022',
+            link: pdf2,
         },
         {
             title: 'ATA ALTERAÇÃO E CONSOLIDAÇÃO 10º ESTATUTO - nov 2022',

@@ -1,8 +1,8 @@
 .card {
     margin: 0;
     padding: 2.5rem;
-    background: var(--color-green);
-    border-radius: 30px;
+    background: var(--color-white);
+    border-radius: 15px;
     display: flex;
     flex-direction: column;
 }
@@ -14,7 +14,7 @@
 
 .card h1 {
     font-size: 20px;
-    color: var(--color-white);
+    color: var(--color-black);
     margin-bottom: 2rem;
 }
 
@@ -25,17 +25,19 @@
     margin-top: auto;
 }
 
-.btn a {
-    padding: 0.6rem 3rem;
-    background: var(--color-red);
-    color: var(--color-white);
+.btn button {
+    padding: 1rem 10rem;
+    background: transparent;
+    color: var(--color-red);
+    border: var(--color-red) 2px solid;
     cursor: pointer;
     font-size: 14px;
     font-weight: bold;
-    border-radius: 30px;
+    border-radius: 10px;
     transition: 0.2s;
 }
 
-.btn a:hover {
-    padding: 0.6rem 5rem;
+.btn button:hover {
+    background: var(--color-red);
+    color: var(--color-white);
 }

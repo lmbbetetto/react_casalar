@@ -10,7 +10,6 @@ import { Transparencia } from "./components/transparencia";
 import { Contact } from "./components/contact";
 import { Apoie } from "./components/apoie";
 
-
 function App() {
 
   return (
