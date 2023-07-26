@@ -1,12 +1,19 @@
 .container {
     max-width: 15rem;
-    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+
+    background: var(--color-light);
+    padding: 2rem;
+    border-radius: 15px;
 }
 
 .container h1 {
-    max-width: 90%;
+    max-width: 100%;
     text-align: center;
     font-size: 18px;
+    font-weight: 700;
 }
 
 .container img {

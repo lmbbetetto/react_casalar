@@ -1,0 +1,33 @@
+.containerNot {
+    max-width: 86%;
+    margin: 4rem auto 0;
+    padding: 3rem 3rem 4rem 3rem;
+    background: var(--color-white);
+    color: var(--color-black);
+    border-radius: 30px;
+}
+
+.container {
+    max-width: 100%;
+    margin: 4rem auto 0;
+    color: var(--color-black);
+    border-radius: 30px;
+}
+
+.container span {
+    font-style: italic;
+}
+
+.container img {
+    border-radius: 30px;
+    height: 25rem;
+}
+
+.container h1 {
+    margin: 3rem 0 5rem 0;
+}
+
+.container p {
+    margin-top: 5rem;
+    max-width: 90%;
+}

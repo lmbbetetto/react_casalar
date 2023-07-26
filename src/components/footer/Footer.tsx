@@ -6,13 +6,17 @@ import { BsFacebook } from 'react-icons/bs'
 import { BsInstagram } from 'react-icons/bs'
 
 export function Footer() {
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
   return (
     <>
       <div className="container_footer">
         <Link to="/"><img src={logo} alt="Logo Casa Lar" className="logo_footer" /></Link>
         <div>
           <nav className="menu_footer">
-            <ul>
+            <ul onClick={scrollToTop}>
               <Link to="/"><li>Início</li></Link>
               <Link to="/sobre"><li>Sobre</li></Link>
               <Link to="/transparencia"><li>Transparência</li></Link>
