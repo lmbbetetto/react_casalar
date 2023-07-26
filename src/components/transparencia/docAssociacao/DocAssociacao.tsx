@@ -1,4 +1,4 @@
-import { BtnBack } from '../../buttonBack/back'
+import { BtnBack } from '../../component/buttonBack/back'
 import { CardTransparencia } from '../cardTransparencia'
 import style from './style.module.css'
 

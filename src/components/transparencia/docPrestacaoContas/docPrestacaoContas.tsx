@@ -1,9 +1,12 @@
 import { GrDocumentPerformance } from 'react-icons/gr'
 import { Link } from 'react-router-dom'
-import { BtnBack } from '../../buttonBack/back'
+import { BtnBack } from '../../component/buttonBack/back'
 import style from './style.module.css'
 
 export function DocPrestacaoContas() {
+    const scrollToTop = () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    };
     return (
         <>
             <div className={style.container}>
@@ -18,7 +21,7 @@ export function DocPrestacaoContas() {
                         <GrDocumentPerformance color='black' size={60} />
                         <h1>2022</h1>
                         <div className={style.btn}>
-                            <Link to='/doc2022'><button>Acessar</button></Link>
+                            <Link to='/doc2022'><button onClick={scrollToTop}>Acessar</button></Link>
                         </div>
                     </section>
 
@@ -26,7 +29,7 @@ export function DocPrestacaoContas() {
                         <GrDocumentPerformance color='black' size={60} />
                         <h1>2023</h1>
                         <div className={style.btn}>
-                            <Link to='/doc2023'><button>Acessar</button></Link>
+                            <Link to='/doc2023'><button onClick={scrollToTop}>Acessar</button></Link>
                         </div>
                     </section>
                 </div>

@@ -7,9 +7,12 @@ interface btn {
 }
 
 export const BtnBack: React.FC<btn> = ({ link }) => {
+    const scrollToTop = () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    };
     return (
         <>
-            <Link to={link}><button className={style.botao}><FaArrowLeft size={15} /> Voltar</button></Link>
+            <Link to={link}><button className={style.botao}><FaArrowLeft size={15}  onClick={scrollToTop}/> Voltar</button></Link>
         </>
     )
 }

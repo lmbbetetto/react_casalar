@@ -1,12 +1,54 @@
 import style from './style.module.css'
+import { toast } from 'react-toastify'
 
 import { ImLocation } from 'react-icons/im'
 import { BsFillTelephoneFill } from 'react-icons/bs'
 import { BsFacebook } from 'react-icons/bs'
 import { AiFillInstagram } from 'react-icons/ai'
+import emailjs, { EmailJSResponseStatus } from '@emailjs/browser'
+import { useRef, FormEvent, useState } from 'react'
 
 
 export function Contact() {
+    const form = useRef<HTMLFormElement | null>(null);
+    const [formData, setFormData] = useState({
+        name: '',
+        email: '',
+        phone: '',
+        message: ''
+    });
+
+    const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+        const { name, value } = e.target;
+        setFormData((prevData) => ({
+            ...prevData,
+            [name]: value
+        }));
+    };
+
+    const sendEmail = (e: FormEvent<HTMLButtonElement>) => {
+        e.preventDefault();
+        if (!form.current) return;
+
+        emailjs.sendForm('service_vxeo937', 'template_56zf7jf', form.current, 'cLJg8_cL0aeiB6Jiw')
+            .then((result: EmailJSResponseStatus) => {
+                toast.success("Mensagem enviada!");
+                resetForm();
+            })
+            .catch((error) => {
+                toast.error("Mensagem não enviada!");
+                resetForm();
+            });
+    };
+
+    const resetForm = () => {
+        setFormData({
+            name: '',
+            email: '',
+            phone: '',
+            message: ''
+        });
+    };
     return (
         <>
             <div className={style.container}>
@@ -43,12 +85,40 @@ export function Contact() {
                         </article>
                     </div>
                     <div>
-                        <form>
-                            <input type="text" name='name' placeholder='Nome completo' required />
-                            <input type="email" name="email" placeholder='Email' required />
-                            <input type="phone" name="phone" placeholder='Telefone' required />
-                            <textarea name="message" rows={7} placeholder='Mensagem' required></textarea>
-                            <button type='submit' className={style.btnForm}>Enviar</button>
+                        <form ref={form}>
+                            <input
+                                type="text"
+                                name="name"
+                                placeholder="Nome completo"
+                                value={formData.name}
+                                onChange={handleChange}
+                                required
+                            />
+                            <input
+                                type="email"
+                                name="email"
+                                placeholder="Email"
+                                value={formData.email}
+                                onChange={handleChange}
+                                required
+                            />
+                            <input
+                                type="tel"
+                                name="phone"
+                                placeholder="Telefone"
+                                value={formData.phone}
+                                onChange={handleChange}
+                                required
+                            />
+                            <textarea
+                                name="message"
+                                rows={7}
+                                placeholder="Mensagem"
+                                value={formData.message}
+                                onChange={handleChange}
+                                required
+                            ></textarea>
+                            <button type="submit" className={style.btnForm} onClick={sendEmail}>Enviar</button>
                         </form>
                     </div>
                 </div>

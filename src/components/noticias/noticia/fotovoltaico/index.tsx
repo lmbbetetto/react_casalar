@@ -2,7 +2,7 @@ import style from './styles.module.css'
 import IMG from '../../../../assets/fotovoltaico.jpeg'
 import { Link } from 'react-router-dom'
 import { FaArrowLeft } from 'react-icons/fa'
-import { BtnBack } from '../../../buttonBack/back'
+import { BtnBack } from '../../../component/buttonBack/back'
 
 export function Fotovoltaico() {
     return (
