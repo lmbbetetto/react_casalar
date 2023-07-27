@@ -18,3 +18,9 @@
 .botao:hover {
     opacity: 50%;
 }
+
+@media (max-width: 720px) {
+    .botao {
+        display: none;
+    }
+}

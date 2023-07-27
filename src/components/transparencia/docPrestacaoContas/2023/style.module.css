@@ -43,3 +43,16 @@
     font-weight: 700;
     border-bottom: var(--color-black) 1px solid;
 }
+
+@media (max-width: 720px) {
+    .container {
+        margin: 0 auto;
+    }
+
+    .cards {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex: 0;
+    }
+}
