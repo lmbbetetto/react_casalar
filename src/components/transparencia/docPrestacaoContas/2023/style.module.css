@@ -7,11 +7,18 @@
     border-radius: 30px;
 }
 
-.cards {
+/* .cards {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 1em;
     flex: 1;
+} */
+
+.cards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 4rem;
 }
 
 .titulo {

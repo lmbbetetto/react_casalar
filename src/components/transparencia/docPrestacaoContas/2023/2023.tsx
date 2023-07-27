@@ -1,3 +1,4 @@
+import { ArquivoIndisp } from '../../../component/arquivoIndisp/indisp'
 import { BtnBack } from '../../../component/buttonBack/back'
 import { CardTransparencia } from '../../cardTransparencia'
 import style from './style.module.css'
@@ -20,9 +21,9 @@ export function Doc2023() {
                 </div>
 
                 <div className={style.fomento}>
-                    <h1 className={style.titleFomento}>TF 03/2022</h1>
+                    {/* <h1 className={style.titleFomento}>TF 03/2022</h1> */}
                     <div className={style.cards}>
-                        {
+                        {/* {
                             documents.map((component, index) => (
                                 <CardTransparencia
                                     key={index}
@@ -30,22 +31,10 @@ export function Doc2023() {
                                     link={component.link}
                                 />
                             ))
-                        }
-                    </div>
-                </div>
+                        } */}
 
-                <div className={style.fomento}>
-                    <h1 className={style.titleFomento}>TF 03/2022</h1>
-                    <div className={style.cards}>
-                        {
-                            documents.map((component, index) => (
-                                <CardTransparencia
-                                    key={index}
-                                    title={component.title}
-                                    link={component.link}
-                                />
-                            ))
-                        }
+                        <ArquivoIndisp />
+
                     </div>
                 </div>
             </div>

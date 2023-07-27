@@ -3,7 +3,6 @@ import LOGO from '../../assets/logo.png'
 
 import { Link } from 'react-router-dom'
 import { FaHeart } from 'react-icons/fa'
-import { BsFacebook, BsInstagram } from 'react-icons/bs'
 import { AnimatedHumburguerButton } from './animatedHamburguerButton'
 import { useState } from 'react'
 

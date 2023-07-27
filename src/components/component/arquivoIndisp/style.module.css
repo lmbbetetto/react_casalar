@@ -1,0 +1,61 @@
+.card {
+    max-width: 25rem;
+    margin: 0;
+    padding: 2.5rem;
+    background: var(--color-white);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.card svg {
+    margin: 0 auto;
+    margin-bottom: 1.5rem;
+}
+
+.card h1 {
+    font-size: 20px;
+    color: var(--color-black);
+    margin-bottom: 2rem;
+}
+
+.btn {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    margin-top: auto;
+}
+
+.btn button {
+    width: 15rem;
+    padding: 1rem 10rem;
+    background: transparent;
+    color: var(--color-red);
+    border: var(--color-red) 2px solid;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 10px;
+    transition: 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    
+}
+
+.btn button:hover {
+    background: var(--color-red);
+    color: var(--color-white);
+}
+
+@media (max-width: 720px) {
+    .card {
+        margin: 0;
+        width: 22rem;
+    }
+
+    .card button {
+        width: 10rem;
+    }
+}
