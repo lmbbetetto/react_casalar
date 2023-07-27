@@ -8,8 +8,11 @@ import { AnimatedHumburguerButton } from './animatedHamburguerButton'
 import { useState } from 'react'
 
 export function Header() {
-
   const [active, setActive] = useState(false)
+
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
 
   return (
     <>
@@ -47,7 +50,7 @@ export function Header() {
           </div>
           <div className={active ? "activeSidenav" : "sidenav"}>
             <div className="container_mobile container-header">
-              <div className="mobile_1">
+              <div className="mobile_1" onClick={scrollToTop}>
                 <Link to="/"><li>Início</li></Link>
                 <Link to="/sobre"><li>Sobre</li></Link>
                 <Link to="/transparencia"><li>Transparência</li></Link>
