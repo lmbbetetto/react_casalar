@@ -6,7 +6,7 @@ export const Container = styled.div`
       display: none;
     }
 
-    .mobile {
+    /* .mobile {
       position: fixed;
       display: flex;
       flex-direction: row;
@@ -14,7 +14,7 @@ export const Container = styled.div`
       justify-content: space-between;
       width: 87%;
       height: 75px;
-    }
+    } */
     
     .sidenav {
       top: 75px;
@@ -64,7 +64,7 @@ export const Container = styled.div`
     }
 
     .mobile_mobile {
-      width: 90%;
+      width: 100%;
       display: flex;
       flex-direction: row;
       justify-content: space-between;
