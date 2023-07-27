@@ -96,3 +96,14 @@
     justify-content: center;
     margin-top: 2rem;
 }
+
+@media (max-width: 720px) {
+    .sobreHome {
+        padding: 1rem 1rem 2rem 1rem;
+    }
+
+    .cards {
+        flex-direction: column;
+        margin: 0 auto;
+    }
+}

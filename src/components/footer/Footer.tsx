@@ -16,13 +16,13 @@ export function Footer() {
         <Link to="/"><img src={logo} alt="Logo Casa Lar" className="logo_footer" /></Link>
         <div>
           <nav className="menu_footer">
-            <ul onClick={scrollToTop}>
-              <Link to="/"><li>Início</li></Link>
-              <Link to="/sobre"><li>Sobre</li></Link>
-              <Link to="/transparencia"><li>Transparência</li></Link>
-              <Link to="/noticias"><li>Notícias</li></Link>
-              <Link to="/contato"><li>Contato</li></Link>
-            </ul>
+            <div onClick={scrollToTop}>
+              <Link to="/"><a>Início</a></Link>
+              <Link to="/sobre"><a>Sobre</a></Link>
+              <Link to="/transparencia"><a>Transparência</a></Link>
+              <Link to="/noticias"><a>Notícias</a></Link>
+              <Link to="/contato"><a>Contato</a></Link>
+            </div>
           </nav>
         </div>
 
@@ -31,21 +31,21 @@ export function Footer() {
           <a href="https://www.instagram.com/projeto.cara/" target="_blank"><BsInstagram /></a>
         </div>
 
+        <div className="copy">
+          <small>
+            &copy; Assiciação Casa Lar | Todos os direitos reservados.
+          </small>
+        </div>
+        <div className="copy">
+          <small>
+            Desenvolvido por{" "}
+            <a href="https://www.leonardobetetto.dev" target="_blank">
+              Leonardo Betetto
+            </a>
+          </small>
+        </div>
       </div>
 
-      <div className="copy">
-        <small>
-          &copy; Assiciação Casa Lar | Todos os direitos reservados.
-        </small>
-      </div>
-      <div className="copy">
-        <small>
-          Desenvolvido por{" "}
-          <a href="https://www.leonardobetetto.dev" target="_blank">
-            Leonardo Betetto
-          </a>
-        </small>
-      </div>
     </>
   );
 }

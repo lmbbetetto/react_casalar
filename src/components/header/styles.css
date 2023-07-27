@@ -94,11 +94,11 @@
 
 .mobile_1 a {
   color: var(--color-black);
-  transition: var(--transition);
+  transition: .2s;
 }
 
 .mobile_1 a:hover {
-  color: var(--color-green-primary);
+  color: var(--color-blue-primary);
 }
 
 .linha a:after {
