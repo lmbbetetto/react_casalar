@@ -46,10 +46,6 @@
 }
 
 @media (max-width: 720px) {
-    .container {
-        margin: 0 auto;
-    }
-
     .apoie_column {
         display: flex;
         flex-direction: column;

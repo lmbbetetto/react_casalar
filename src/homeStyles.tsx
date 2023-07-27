@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Container = styled.div`
 
-    .mobile_mobile {
+    .main_mobile {
       display: none;
     }
     
@@ -45,9 +45,15 @@ export const Container = styled.div`
 
     .main_mobile {
       position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 999;
       width: 100%;
-      height: 75px;
+      max-height: 75px;
+      height: 100%;
       display: flex;
+      z-index: 1;
 
       background-color: var(--color-white);
       box-shadow: 5px 5px 30px rgba(0,0,0,0.5);

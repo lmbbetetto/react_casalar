@@ -102,7 +102,7 @@ input, textarea {
 @media (max-width: 720px) {
     .container {
         max-width: 86%;
-        margin: 0 auto;
+        margin: 8rem auto 0 auto;
     }
 
     .containerContact {

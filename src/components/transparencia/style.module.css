@@ -93,7 +93,7 @@
 @media (max-width: 720px) {
     .container {
         width: 86%;
-        margin: 0 auto;
+        margin: 8rem auto;
     }
 
     .cards {

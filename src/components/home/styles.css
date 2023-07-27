@@ -106,4 +106,8 @@
         flex-direction: column;
         margin: 0 auto;
     }
+
+    .img_fundo {
+        margin-top: 4rem;
+    }
 }
