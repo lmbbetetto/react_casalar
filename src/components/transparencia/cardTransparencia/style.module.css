@@ -48,3 +48,10 @@
     background: var(--color-red);
     color: var(--color-white);
 }
+
+@media (max-width: 720px) {
+    .card {
+        margin: 0 auto;
+        width: 23rem;
+    }
+}

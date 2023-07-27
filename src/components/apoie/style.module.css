@@ -2,7 +2,6 @@
     max-width: 86%;
     margin: 4rem auto 0 auto;
     padding: 3rem;
-    /* background: var(--color-green); */
     border-radius: 30px;
 }
 
@@ -44,4 +43,19 @@
 
     display: flex;
     justify-content: center;
+}
+
+@media (max-width: 720px) {
+    .container {
+        margin: 0 auto;
+    }
+
+    .apoie_column {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .block {
+        width: 100%;
+    }
 }

@@ -5,16 +5,6 @@ export const Container = styled.div`
     .mobile_mobile {
       display: none;
     }
-
-    /* .mobile {
-      position: fixed;
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      justify-content: space-between;
-      width: 87%;
-      height: 75px;
-    } */
     
     .sidenav {
       top: 75px;
@@ -69,7 +59,7 @@ export const Container = styled.div`
       flex-direction: row;
       justify-content: space-between;
       align-items: center;
-      padding: 1rem;
+      padding: 0 1rem;
 
     }
 
@@ -81,7 +71,7 @@ export const Container = styled.div`
         position: fixed;
         width: 100%;
         height: 100vh;
-        background: #fff;
+        background: var(--color-white);
         transform: translateX(-110%);
         transition: all 0.5s ease-in-out;
         z-index: 1;
@@ -91,7 +81,7 @@ export const Container = styled.div`
         position: fixed;
         width: 100%;
         height: 100vh;
-        background: #fff;
+        background: var(--color-white);
         transform: translateX(-50%);
         transition: all 0.5s ease-in-out;
         z-index: 1;

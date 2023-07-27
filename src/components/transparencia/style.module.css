@@ -89,3 +89,14 @@
     background: var(--color-red);
     color: var(--color-white);
 }
+
+@media (max-width: 720px) {
+    .container {
+        width: 86%;
+        margin: 0 auto;
+    }
+
+    .cards {
+        flex-direction: column;
+    }
+}
