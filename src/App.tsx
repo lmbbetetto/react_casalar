@@ -1,6 +1,7 @@
 import { Route, Routes } from "react-router-dom";
 import { ToastContainer } from "react-toastify";
 import 'react-toastify/dist/ReactToastify.min.css'
+import { Container } from "./homeStyles"
 
 import { Header } from './components/header/Header'
 import { Home } from './components/home/Home'
@@ -20,7 +21,7 @@ import { Doc2023 } from "./components/transparencia/docPrestacaoContas/2023/2023
 function App() {
 
   return (
-    <>
+    <Container>
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
@@ -42,7 +43,7 @@ function App() {
       </Routes>
       <Footer />
       <ToastContainer />
-    </>
+    </Container>
 
   )
 }

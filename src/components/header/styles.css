@@ -58,3 +58,64 @@
 .btn_doe:hover {
   background: var(--color-red-secundary);
 }
+
+/* Mobile */
+.logo__casa {
+  max-width: 100px;
+  margin: 0 auto;
+}
+
+.header_menu button {
+  font-weight: bold;
+}
+
+.container_mobile {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+
+  padding: 2rem 7rem 0 0;
+}
+
+.container_mobile button {
+  font-weight: bold;
+}
+
+.mobile_1 {
+  display: flex;
+  flex-direction: column;
+
+  gap: 1.5rem;
+
+  max-width: 135px;
+  width: 100%;
+  cursor: pointer;
+}
+
+.mobile_1 a {
+  color: var(--color-black);
+  transition: var(--transition);
+}
+
+.mobile_1 a:hover {
+  color: var(--color-green-primary);
+}
+
+.linha a:after {
+    content: "";
+    display: block;
+    width: 100px;
+    height: 2px;
+    margin-top: 3rem;
+    background: var(--color-black);
+}
+
+.socials {
+  display: flex;
+  gap: 1.5rem;
+  margin-top: -0.3rem;
+}
+
+.socials a {
+font-size: 30px;
+}
