@@ -39,7 +39,7 @@ export function Footer() {
         <div className="copy">
           <small>
             Desenvolvido por{" "}
-            <a href="https://www.leonardobetetto.dev" target="_blank">
+            <a href="https://portfolio-git-main-lmbbetetto.vercel.app/" target="_blank">
               Leonardo Betetto
             </a>
           </small>
