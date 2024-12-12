@@ -265,7 +265,9 @@ export function Doc2024() {
         </div>
 
         <div className={style.fomento}>
-          <h1 className={style.titleFomento}>Fotovoltaico</h1>
+          <h1 className={style.titleFomento}>
+            Fotovoltaico - Emenda Parlamentar - Dep. Estadual Vinicius Camarinha
+          </h1>
           <div className={style.cards}>
             {FOTOFOLTAICO.map((component, index) => (
               <CardTransparencia

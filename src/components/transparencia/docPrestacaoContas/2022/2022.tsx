@@ -265,7 +265,9 @@ export function Doc2022() {
         </div>
 
         <div className={style.fomento}>
-          <h1 className={style.titleFomento}>Fotovoltaico</h1>
+          <h1 className={style.titleFomento}>
+            Fotovoltaico - Emenda Parlamentar - Dep. Estadual Vinicius Camarinha
+          </h1>
           <div className={style.cards}>
             {FOTOFOLTAICO.map((component, index) => (
               <CardTransparencia
@@ -278,7 +280,10 @@ export function Doc2022() {
         </div>
 
         <div className={style.fomento}>
-          <h1 className={style.titleFomento}>Quadra Poliesportiva</h1>
+          <h1 className={style.titleFomento}>
+            Quadra Poliesportiva - Emenda Parlamentar - Dep. Estadual Ricardo
+            Madalena
+          </h1>
           <div className={style.cards}>
             {QUADRA.map((component, index) => (
               <CardTransparencia
@@ -291,7 +296,10 @@ export function Doc2022() {
         </div>
 
         <div className={style.fomento}>
-          <h1 className={style.titleFomento}>Cobertura Vão Livre</h1>
+          <h1 className={style.titleFomento}>
+            Cobertura Vão Livre - Emenda Parlamentar - Dep. Estadual Vinicius
+            Camarinha
+          </h1>
           <div className={style.cards}>
             {VAOLIVRE.map((component, index) => (
               <CardTransparencia
