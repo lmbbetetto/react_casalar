@@ -45,7 +45,7 @@ import PDF18 from "../../../../assets/transparencia/2022/QUADRA/TERMO DE FOMENTO
 // VAO LIVRE
 import PDF19 from "../../../../assets/transparencia/2022/COBERTURA VÃO LIVRE/TERMO DE FOMENTO COMPLETO ASSINADO.pdf";
 
-export function Doc2022() {
+export function Doc2024() {
   const TF01_2022 = [
     {
       title: "Relação despesas - 3º Quadrimestre",
@@ -157,7 +157,7 @@ export function Doc2022() {
       <div className={style.container}>
         <BtnBack link="/docprestacaocontas" />
         <div className={style.titulo}>
-          <h1>Documentos 2022</h1>
+          <h1>Documentos 2024</h1>
         </div>
 
         <div className={style.fomento}>
