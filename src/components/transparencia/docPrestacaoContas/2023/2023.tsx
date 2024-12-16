@@ -38,126 +38,159 @@ import PDF24 from "../../../../assets/transparencia/2023/TF-14-23/Parecer-conclu
 import PDF25 from "../../../../assets/transparencia/2023/TF-14-23/TF-14-23-CASA-LAR-completo.pdf";
 
 export function Doc2023() {
-  const TF_01_22_TA_08_23 = [
+  const documents2023 = [
     {
-      title: "Termo de Fomento",
-      link: PDF2,
+      name: "TF 01/2022 | TA 08/2023",
+      documents: [
+        {
+          title: "Termo de Fomento",
+          link: PDF2,
+        },
+        {
+          title: "Termo de Aditivo",
+          link: PDF3,
+        },
+        {
+          title: "Parecer Conclusivo",
+          link: PDF1,
+        },
+      ],
     },
     {
-      title: "Termo de Aditivo",
-      link: PDF3,
+      name: "TF 02/2022 | TA 05/2023",
+      documents: [
+        {
+          title: "Termo de Fomento",
+          link: PDF6,
+        },
+        {
+          title: "Termo de Aditivo",
+          link: PDF5,
+        },
+        {
+          title: "Parecer Conclusivo",
+          link: PDF4,
+        },
+      ],
     },
     {
-      title: "Parecer Conclusivo",
-      link: PDF1,
+      name: "TF 02/2023",
+      documents: [
+        {
+          title: "Termo de Fomento",
+          link: PDF8,
+        },
+        {
+          title: "Parecer Conclusivo",
+          link: PDF7,
+        },
+      ],
+    },
+    {
+      name: "TF 03/2023",
+      documents: [
+        {
+          title: "Termo de Fomento",
+          link: PDF10,
+        },
+        {
+          title: "Parecer Conclusivo",
+          link: PDF9,
+        },
+      ],
+    },
+    {
+      name: "TF 03/2022 | TA 07/2023",
+      documents: [
+        {
+          title: "Termo de Fomento",
+          link: PDF13,
+        },
+        {
+          title: "Termo de Aditivo",
+          link: PDF12,
+        },
+        {
+          title: "Parecer Conclusivo",
+          link: PDF11,
+        },
+      ],
+    },
+    {
+      name: "TF 04/2022 | TA 06/2023",
+      documents: [
+        {
+          title: "Termo de Fomento",
+          link: PDF16,
+        },
+        {
+          title: "Termo de Aditivo",
+          link: PDF15,
+        },
+        {
+          title: "Parecer Conclusivo",
+          link: PDF14,
+        },
+      ],
+    },
+    {
+      name: "TF 05/2022 | TA 09/2023",
+      documents: [
+        {
+          title: "Termo de Fomento",
+          link: PDF19,
+        },
+        {
+          title: "Termo de Aditivo",
+          link: PDF18,
+        },
+        {
+          title: "Parecer Conclusivo",
+          link: PDF17,
+        },
+      ],
+    },
+    {
+      name: "TF 05/2023",
+      documents: [
+        {
+          title: "Termo de Fomento",
+          link: PDF21,
+        },
+        {
+          title: "Parecer Conclusivo",
+          link: PDF20,
+        },
+      ],
+    },
+    {
+      name: "TF 11/2023",
+      documents: [
+        {
+          title: "Termo de Fomento",
+          link: PDF23,
+        },
+        {
+          title: "Parecer Conclusivo",
+          link: PDF22,
+        },
+      ],
+    },
+    {
+      name: "TF 14/2023",
+      documents: [
+        {
+          title: "Termo de Fomento",
+          link: PDF25,
+        },
+        {
+          title: "Parecer Conclusivo",
+          link: PDF24,
+        },
+      ],
     },
   ];
-  const TF_02_22_TA_05_23 = [
-    {
-      title: "Termo de Fomento",
-      link: PDF6,
-    },
-    {
-      title: "Termo de Aditivo",
-      link: PDF5,
-    },
-    {
-      title: "Parecer Conclusivo",
-      link: PDF4,
-    },
-  ];
-  const TF_02_23 = [
-    {
-      title: "Termo de Fomento",
-      link: PDF8,
-    },
-    {
-      title: "Parecer Conclusivo",
-      link: PDF7,
-    },
-  ];
-  const TF_03_23 = [
-    {
-      title: "Termo de Fomento",
-      link: PDF10,
-    },
-    {
-      title: "Parecer Conclusivo",
-      link: PDF9,
-    },
-  ];
-  const TF_03_23_TA_07_23 = [
-    {
-      title: "Termo de Fomento",
-      link: PDF13,
-    },
-    {
-      title: "Termo de Aditivo",
-      link: PDF12,
-    },
-    {
-      title: "Parecer Conclusivo",
-      link: PDF11,
-    },
-  ];
-  const TF_04_22_TA_06_23 = [
-    {
-      title: "Termo de Fomento",
-      link: PDF16,
-    },
-    {
-      title: "Termo de Aditivo",
-      link: PDF15,
-    },
-    {
-      title: "Parecer Conclusivo",
-      link: PDF14,
-    },
-  ];
-  const TF_05_22_TA_09_23 = [
-    {
-      title: "Termo de Fomento",
-      link: PDF19,
-    },
-    {
-      title: "Termo de Aditivo",
-      link: PDF18,
-    },
-    {
-      title: "Parecer Conclusivo",
-      link: PDF17,
-    },
-  ];
-  const TF_05_23 = [
-    {
-      title: "Termo de Fomento",
-      link: PDF21,
-    },
-    {
-      title: "Parecer Conclusivo",
-      link: PDF20,
-    },
-  ];
-  const TF_11_23 = [
-    {
-      title: "Termo de Fomento",
-      link: PDF23,
-    },
-    {
-      title: "Parecer Conclusivo",
-      link: PDF22,
-    },
-  ];
-  const TF_14_23 = [
-    {
-      title: "Termo de Fomento",
-      link: PDF25,
-    },
-    {
-      title: "Parecer Conclusivo",
-      link: PDF24,
-    },
-  ];
+
   return (
     <>
       <div className={style.container}>
@@ -166,135 +199,20 @@ export function Doc2023() {
           <h1>Documentos 2023</h1>
         </div>
 
-        <div className={style.fomento}>
-          <h1 className={style.titleFomento}>TF 01/2022 | TA 08/2023</h1>
-          <div className={style.cards}>
-            {TF_01_22_TA_08_23.map((component, index) => (
-              <CardTransparencia
-                key={index}
-                title={component.title}
-                link={component.link}
-              />
-            ))}
+        {documents2023.map((group, groupIndex) => (
+          <div key={groupIndex} className={style.fomento}>
+            <h1 className={style.titleFomento}>{group.name}</h1>
+            <div className={style.cards}>
+              {group.documents.map((document, docIndex) => (
+                <CardTransparencia
+                  key={`${groupIndex}-${docIndex}`}
+                  title={document.title}
+                  link={document.link}
+                />
+              ))}
+            </div>
           </div>
-        </div>
-
-        <div className={style.fomento}>
-          <h1 className={style.titleFomento}>TF 02/2022 | TA 05/2023</h1>
-          <div className={style.cards}>
-            {TF_02_22_TA_05_23.map((component, index) => (
-              <CardTransparencia
-                key={index}
-                title={component.title}
-                link={component.link}
-              />
-            ))}
-          </div>
-        </div>
-
-        <div className={style.fomento}>
-          <h1 className={style.titleFomento}>TF 02/2023</h1>
-          <div className={style.cards}>
-            {TF_02_23.map((component, index) => (
-              <CardTransparencia
-                key={index}
-                title={component.title}
-                link={component.link}
-              />
-            ))}
-          </div>
-        </div>
-
-        <div className={style.fomento}>
-          <h1 className={style.titleFomento}>TF 03/2023</h1>
-          <div className={style.cards}>
-            {TF_03_23.map((component, index) => (
-              <CardTransparencia
-                key={index}
-                title={component.title}
-                link={component.link}
-              />
-            ))}
-          </div>
-        </div>
-
-        <div className={style.fomento}>
-          <h1 className={style.titleFomento}>TF 03/2022 | TA 07/2023</h1>
-          <div className={style.cards}>
-            {TF_03_23_TA_07_23.map((component, index) => (
-              <CardTransparencia
-                key={index}
-                title={component.title}
-                link={component.link}
-              />
-            ))}
-          </div>
-        </div>
-
-        <div className={style.fomento}>
-          <h1 className={style.titleFomento}>TF 04/2022 | TA 06/2023</h1>
-          <div className={style.cards}>
-            {TF_04_22_TA_06_23.map((component, index) => (
-              <CardTransparencia
-                key={index}
-                title={component.title}
-                link={component.link}
-              />
-            ))}
-          </div>
-        </div>
-
-        <div className={style.fomento}>
-          <h1 className={style.titleFomento}>TF 05/2022 | TA 09/2023</h1>
-          <div className={style.cards}>
-            {TF_05_22_TA_09_23.map((component, index) => (
-              <CardTransparencia
-                key={index}
-                title={component.title}
-                link={component.link}
-              />
-            ))}
-          </div>
-        </div>
-
-        <div className={style.fomento}>
-          <h1 className={style.titleFomento}>TF 05/2023</h1>
-          <div className={style.cards}>
-            {TF_05_23.map((component, index) => (
-              <CardTransparencia
-                key={index}
-                title={component.title}
-                link={component.link}
-              />
-            ))}
-          </div>
-        </div>
-
-        <div className={style.fomento}>
-          <h1 className={style.titleFomento}>TF 11/2023</h1>
-          <div className={style.cards}>
-            {TF_11_23.map((component, index) => (
-              <CardTransparencia
-                key={index}
-                title={component.title}
-                link={component.link}
-              />
-            ))}
-          </div>
-        </div>
-
-        <div className={style.fomento}>
-          <h1 className={style.titleFomento}>TF 14/2023</h1>
-          <div className={style.cards}>
-            {TF_14_23.map((component, index) => (
-              <CardTransparencia
-                key={index}
-                title={component.title}
-                link={component.link}
-              />
-            ))}
-          </div>
-        </div>
+        ))}
       </div>
     </>
   );
