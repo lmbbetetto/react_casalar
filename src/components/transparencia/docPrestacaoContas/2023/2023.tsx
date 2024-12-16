@@ -22,7 +22,7 @@ import PDF13 from "../../../../assets/transparencia/2023/TF-03-23-TA-07-23/Termo
 
 import PDF14 from "../../../../assets/transparencia/2023/TF-04-22-TA-06-23/Parecer-conclusivo-aprovação-TF-04-2022.pdf";
 import PDF15 from "../../../../assets/transparencia/2023/TF-04-22-TA-06-23/Termo-aditivo-06-2023.pdf";
-import PDF16 from "../../../../assets/transparencia/2023/TF-04-22-TA-06-23/termo-de-fomento-04-2022.pdf";
+import PDF16 from "../../../../assets/transparencia/2023/TF-04-22-TA-06-23/TF-04-2022.pdf";
 
 import PDF17 from "../../../../assets/transparencia/2023/TF-05-22-TA-09-23/Parecer-conclusivo-aprovação-TF-05-2022.pdf";
 import PDF18 from "../../../../assets/transparencia/2023/TF-05-22-TA-09-23/Termo-Aditivo-09-2023.pdf";
@@ -40,10 +40,6 @@ import PDF25 from "../../../../assets/transparencia/2023/TF-14-23/TF-14-23-CASA-
 export function Doc2023() {
   const TF_01_22_TA_08_23 = [
     {
-      title: "Parecer Conclusivo",
-      link: PDF1,
-    },
-    {
       title: "Termo de Fomento",
       link: PDF2,
     },
@@ -51,12 +47,12 @@ export function Doc2023() {
       title: "Termo de Aditivo",
       link: PDF3,
     },
-  ];
-  const TF_02_22_TA_05_23 = [
     {
       title: "Parecer Conclusivo",
-      link: PDF4,
+      link: PDF1,
     },
+  ];
+  const TF_02_22_TA_05_23 = [
     {
       title: "Termo de Fomento",
       link: PDF6,
@@ -65,32 +61,32 @@ export function Doc2023() {
       title: "Termo de Aditivo",
       link: PDF5,
     },
-  ];
-  const TF_02_23 = [
     {
       title: "Parecer Conclusivo",
-      link: PDF7,
+      link: PDF4,
     },
+  ];
+  const TF_02_23 = [
     {
       title: "Termo de Fomento",
       link: PDF8,
     },
-  ];
-  const TF_03_23 = [
     {
       title: "Parecer Conclusivo",
-      link: PDF9,
+      link: PDF7,
     },
+  ];
+  const TF_03_23 = [
     {
       title: "Termo de Fomento",
       link: PDF10,
     },
-  ];
-  const TF_03_23_TA_07_23 = [
     {
       title: "Parecer Conclusivo",
-      link: PDF11,
+      link: PDF9,
     },
+  ];
+  const TF_03_23_TA_07_23 = [
     {
       title: "Termo de Fomento",
       link: PDF13,
@@ -99,12 +95,12 @@ export function Doc2023() {
       title: "Termo de Aditivo",
       link: PDF12,
     },
-  ];
-  const TF_04_22_TA_06_23 = [
     {
       title: "Parecer Conclusivo",
-      link: PDF14,
+      link: PDF11,
     },
+  ];
+  const TF_04_22_TA_06_23 = [
     {
       title: "Termo de Fomento",
       link: PDF16,
@@ -113,12 +109,12 @@ export function Doc2023() {
       title: "Termo de Aditivo",
       link: PDF15,
     },
-  ];
-  const TF_05_22_TA_09_23 = [
     {
       title: "Parecer Conclusivo",
-      link: PDF17,
+      link: PDF14,
     },
+  ];
+  const TF_05_22_TA_09_23 = [
     {
       title: "Termo de Fomento",
       link: PDF19,
@@ -127,35 +123,39 @@ export function Doc2023() {
       title: "Termo de Aditivo",
       link: PDF18,
     },
-  ];
-  const TF_05_23 = [
     {
       title: "Parecer Conclusivo",
-      link: PDF20,
+      link: PDF17,
     },
+  ];
+  const TF_05_23 = [
     {
       title: "Termo de Fomento",
       link: PDF21,
     },
-  ];
-  const TF_11_23 = [
     {
       title: "Parecer Conclusivo",
-      link: PDF22,
+      link: PDF20,
     },
+  ];
+  const TF_11_23 = [
     {
       title: "Termo de Fomento",
       link: PDF23,
     },
+    {
+      title: "Parecer Conclusivo",
+      link: PDF22,
+    },
   ];
   const TF_14_23 = [
     {
-      title: "Parecer Conclusivo",
-      link: PDF24,
-    },
-    {
       title: "Termo de Fomento",
       link: PDF25,
+    },
+    {
+      title: "Parecer Conclusivo",
+      link: PDF24,
     },
   ];
   return (
@@ -219,7 +219,7 @@ export function Doc2023() {
         </div>
 
         <div className={style.fomento}>
-          <h1 className={style.titleFomento}>TF 03/2023 | TA 07/2023</h1>
+          <h1 className={style.titleFomento}>TF 03/2022 | TA 07/2023</h1>
           <div className={style.cards}>
             {TF_03_23_TA_07_23.map((component, index) => (
               <CardTransparencia
