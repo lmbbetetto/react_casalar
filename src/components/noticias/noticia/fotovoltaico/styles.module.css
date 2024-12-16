@@ -1,6 +1,15 @@
+.img_fundo {
+    position: relative;
+    z-index: -1;
+}
+
+.img_fundo img {
+    height: 40rem;
+}
+
 .containerNot {
     max-width: 86%;
-    margin: 4rem auto 0;
+    margin: -6rem auto 0;
     padding: 3rem 3rem 4rem 3rem;
     background: var(--color-white);
     color: var(--color-black);
