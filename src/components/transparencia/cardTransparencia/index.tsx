@@ -1,21 +1,21 @@
-import style from './style.module.css'
-import { MdOutlinePictureAsPdf } from 'react-icons/md'
+import style from "./style.module.css";
+import { MdOutlinePictureAsPdf } from "react-icons/md";
 
 interface cardProps {
-    title: string;
-    link: string;
+  title: string;
+  link: string;
 }
 
-export const CardTransparencia: React.FC<cardProps> = (props) => {
-    return (
-        <>
-            <section className={style.card}>
-                <MdOutlinePictureAsPdf color='black' size={60} />
-                <h1>{props.title}</h1>
-                <div className={style.btn}>
-                    <a href={props.link} target='_blank'><button>PDF</button></a>
-                </div>
-            </section>
-        </>
-    )
-}
+export const CardTransparencia: React.FC<cardProps> = ({ title, link }) => {
+  return (
+    <>
+      <a href={link} target="_blank">
+        <section className={style.card}>
+          <MdOutlinePictureAsPdf color="black" size={40} />
+          <h1>{title}</h1>
+          <div className={style.btn}></div>
+        </section>
+      </a>
+    </>
+  );
+};

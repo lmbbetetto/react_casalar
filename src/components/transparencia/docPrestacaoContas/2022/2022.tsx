@@ -1,6 +1,7 @@
 import { BtnBack } from "../../../component/buttonBack/back";
 import { CardTransparencia } from "../../cardTransparencia";
 import style from "./style.module.css";
+import imgFundo from "../../../../assets/fundo-transparencia.png";
 
 // TF01_2022
 import PDF1 from "../../../../assets/transparencia/2022/TF01_2022/Estadual - RP 10 3º quadr..pdf";
@@ -154,11 +155,26 @@ export function Doc2022() {
   ];
   return (
     <>
+      <div className={style.titulo}>
+        <div className={style.tituloTexto}>
+          <p>Transparência</p>
+          <h1>Balanço 2022</h1>
+          <h2>Assoc. Casa Lar</h2>
+        </div>
+        <img src={imgFundo} alt="Imagem de fundo" className={style.imgFundo} />
+      </div>
+
       <div className={style.container}>
         <BtnBack link="/docprestacaocontas" />
-        <div className={style.titulo}>
-          <h1>Documentos 2022</h1>
-        </div>
+        <h1 className={style.textoPrincipal}>
+          A <span className={style.textoPrincipalGreen}>Casa Lar</span>, tem a
+          <span className={style.textoPrincipalGreen}> transparência </span>
+          como um princípio, por isso, disponibilizamos nossos{" "}
+          <span className={style.textoPrincipalGreen}>
+            relatórios, balanços e convênios com o poder público
+          </span>
+          !
+        </h1>
 
         <div className={style.fomento}>
           <h1 className={style.titleFomento}>TF 01/2022</h1>
