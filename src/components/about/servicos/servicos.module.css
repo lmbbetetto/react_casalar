@@ -44,7 +44,7 @@
 
 .titulo {
   display: grid;
-  grid-template-columns: 63.89% 36.11%;
+  grid-template-columns: 36.11% 63.89%;
   align-items: center;
 }
 

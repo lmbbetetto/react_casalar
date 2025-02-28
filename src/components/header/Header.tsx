@@ -36,13 +36,16 @@ export function Header() {
                   <li>Sobre</li>
                   {dropdownOpen && (
                     <ul className="dropdown-menu">
-                      <Link to="/sobre/historia">
+                      <Link to="/sobre">
+                        <li>Nossa História</li>
+                      </Link>
+                      <Link to="/servicos">
                         <li>Serviços</li>
                       </Link>
-                      <Link to="/sobre/missao">
+                      <Link to="/diretoria">
                         <li>Diretoria</li>
                       </Link>
-                      <Link to="/sobre/equipe">
+                      <Link to="/colaboradores">
                         <li>Colaboradores</li>
                       </Link>
                     </ul>

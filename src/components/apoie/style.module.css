@@ -1,57 +1,110 @@
 .container {
-    max-width: 86%;
-    margin: 4rem auto 0 auto;
-    padding: 3rem;
-    border-radius: 30px;
+  max-width: 86%;
+  margin: 4rem auto 0 auto;
+  padding: 3rem;
+  border-radius: 30px;
 }
 
 .apoie_column {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
 }
 
 .block {
-    background: var(--color-white);
-    border-radius: 30px;
-    margin-top: 2rem;
+  background: var(--color-white);
+  border-radius: 30px;
+  margin-top: 2rem;
 
-    padding: 2rem 2rem 2rem 2rem;
-    box-shadow: 5px 5px 30px rgba(0,0,0,0.34);
+  padding: 2rem 2rem 2rem 2rem;
+  box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.34);
 
-    transition: var(--transition);
+  transition: var(--transition);
 }
 
 .block strong {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-    color: var(--color-green);
-    font-size: 1.5rem;
+  color: var(--color-green);
+  font-size: 1.5rem;
 }
 
 .block p {
-    text-align: center;
-    color: var(--color-black);
+  text-align: center;
+  color: var(--color-black);
 }
 
 .icon_apoie {
-    text-align: center;
-    font-size: 50px;
-    margin-bottom: 1rem;
+  text-align: center;
+  font-size: 50px;
+  margin-bottom: 1rem;
 
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
+}
+
+/* Header */
+
+.titulo {
+  display: grid;
+  grid-template-columns: 36.11% 63.89%;
+  align-items: center;
+}
+
+.tituloTexto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 3rem;
+  background: white;
+  height: 100%;
+  padding-left: 9rem;
+}
+
+.tituloTexto h2 {
+  color: var(--color-green);
+}
+
+.tituloTexto p {
+  color: var(--color-black);
+  margin-bottom: 2.375rem;
+}
+
+.imgFundo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.titulo h1 {
+  font-size: 35px;
+  font-weight: bold;
+  color: var(--color-black);
+}
+
+.textoPrincipal {
+  text-align: left;
+  color: var(--color-black);
+  font-size: 28px;
+  margin: -4rem 0 1rem 0;
+  text-align: center;
+}
+
+.textoPrincipalGreen {
+  text-align: left;
+  color: var(--color-green);
+  font-size: 28px;
 }
 
 @media (max-width: 720px) {
-    .apoie_column {
-        display: flex;
-        flex-direction: column;
-    }
-    
-    .block {
-        width: 100%;
-    }
+  .apoie_column {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .block {
+    width: 100%;
+  }
 }

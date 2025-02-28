@@ -2,8 +2,9 @@
   margin: 4rem auto 0 auto;
   max-width: 86%;
   display: grid;
-  grid-template-columns: 65% 35%;
-  align-items: flex-start;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: center;
+  gap: 1rem;
 }
 
 .card {

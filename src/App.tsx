@@ -18,6 +18,9 @@ import { DocPrestacaoContas } from "./components/transparencia/docPrestacaoConta
 import { Doc2022 } from "./components/transparencia/docPrestacaoContas/2022/2022";
 import { Doc2023 } from "./components/transparencia/docPrestacaoContas/2023/2023";
 import { Doc2024 } from "./components/transparencia/docPrestacaoContas/2024/2024";
+import { Servicos } from "./components/about/servicos/servicos";
+import { Colaboradores } from "./components/about/colaboradores/colaboradores";
+import { Diretoria } from "./components/about/diretoria/diretoria";
 
 function App() {
   return (
@@ -26,13 +29,16 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/sobre" element={<About />} />
+        <Route path="/servicos" element={<Servicos />} />
+        <Route path="/colaboradores" element={<Colaboradores />} />
+        <Route path="/diretoria" element={<Diretoria />} />
         <Route path="/contato" element={<Contact />} />
         <Route path="/apoie" element={<Apoie />} />
 
         {/* Noticias */}
         <Route path="/noticias" element={<NotIndex />} />
-        <Route path="/vaolivre" element={<Vaolivre />} />
-        <Route path="/fotovoltaico" element={<Fotovoltaico />} />
+        <Route path="/noticias/vaolivre" element={<Vaolivre />} />
+        <Route path="/noticias/fotovoltaico" element={<Fotovoltaico />} />
 
         {/* Transparência */}
         <Route path="/transparencia" element={<Transparencia />} />

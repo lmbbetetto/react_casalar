@@ -8,7 +8,7 @@ export function NotIndex() {
   const noticias = [
     {
       title: "Fotovoltaico",
-      link: "/fotovoltaico",
+      link: "/noticias/fotovoltaico",
       paragraph:
         "Em dezembro de 2022, a Instituição implantou um Sistema de Energia Solar - Fotovoltaica, em parceria com a Secretaria do Desenvolvimento Social do Governo do Estado de São Paulo. O projeto terá grande impacto, pois garantirá maior potência e produção de energia, resultando em redução dos custos e possibilidade de economia para investimentos e manutenção das necessidades da OSC.",
       photo: FVLT,
@@ -16,7 +16,7 @@ export function NotIndex() {
     },
     {
       title: "Construção Cobertura Vão Livre",
-      link: "/vaolivre",
+      link: "/noticias/vaolivre",
       paragraph:
         "Em março de 2023, a Instituição iniciou a construção de uma Cobertura Vão Livre em parceria com o Governo do Estado de São Paulo. Essa estrutura proporcionará um espaço adequado para atividades de acolhimento institucional e projetos sociais, promovendo inclusão social e interação com a comunidade.",
       photo: CVL,
