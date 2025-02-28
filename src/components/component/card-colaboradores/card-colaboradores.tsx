@@ -4,7 +4,7 @@ import { MdOutlinePictureAsPdf } from "react-icons/md";
 interface cardProps {
   name: string;
   occupation: string;
-  workload: string;
+  workload?: string;
 }
 
 export const CardColaboradores: React.FC<cardProps> = ({

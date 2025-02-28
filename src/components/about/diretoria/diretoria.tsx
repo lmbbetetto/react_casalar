@@ -4,36 +4,103 @@ import imgFundo from "../../../assets/fundo-transparencia.png";
 import { CardColaboradores } from "../../component/card-colaboradores/card-colaboradores";
 
 export function Diretoria() {
-  const diretores = [
+  const diretoria = [
     {
-      name: "teste",
-      occupation: "teste",
-      workload: "40 horas",
+      section: "Presidente",
+      diretoria: [
+        {
+          name: "Claudemir Targino da Silva",
+          occupation: "Presidente",
+        },
+      ],
     },
     {
-      name: "teste",
-      occupation: "teste",
-      workload: "40 horas",
+      section: "Vice-Presidente",
+      diretoria: [
+        {
+          name: "Masayuki Hojo",
+          occupation: "Vice-Presidente",
+        },
+      ],
     },
     {
-      name: "teste",
-      occupation: "teste",
-      workload: "40 horas",
+      section: "Secretários",
+      diretoria: [
+        {
+          name: "Sarkis Melhem Jamil Filho",
+          occupation: "1º Secretário",
+        },
+        {
+          name: "Murilo Aleoti",
+          occupation: "2º Secretário",
+        },
+      ],
     },
     {
-      name: "teste",
-      occupation: "teste",
-      workload: "40 horas",
+      section: "Tesoureiros",
+      diretoria: [
+        {
+          name: "Rodrigo Hiroshi Kakinohana",
+          occupation: "1º Tesoureiro",
+        },
+        {
+          name: "Matheus Veríssimo Cristiano Pereira",
+          occupation: "2º Tesoureiro",
+        },
+      ],
     },
     {
-      name: "teste",
-      occupation: "teste",
-      workload: "40 horas",
+      section: "Consultor Fiscal",
+      diretoria: [
+        {
+          name: "Roque Silveira de Almeida",
+          occupation: "Consultor Fiscal",
+        },
+      ],
     },
     {
-      name: "teste",
-      occupation: "teste",
-      workload: "40 horas",
+      section: "Conselho Fiscal",
+      diretoria: [
+        {
+          name: "José Burati Neto",
+          occupation: "Conselheiro Fiscal",
+        },
+        {
+          name: "Lahude Roumanos Dib",
+          occupation: "Conselheiro Fiscal",
+        },
+        {
+          name: "José Ricardo Bossoni",
+          occupation: "Conselheiro Fiscal",
+        },
+      ],
+    },
+    {
+      section: "Diretor Jurídico",
+      diretoria: [
+        {
+          name: "Giuliano Henrique Pelegrini Merce",
+          occupation: "Diretor Jurídico",
+        },
+      ],
+    },
+    {
+      section: "Diretor Social",
+      diretoria: [
+        {
+          name: "Armando Rodrigues de Lima",
+          occupation: "Diretor Social",
+        },
+      ],
+    },
+    {
+      section: "Diretor de Patrimônio",
+      diretoria: [
+        {
+          name: "José Augusto Benício Rodrigues",
+          occupation: "Diretor de Patrimônio",
+        },
+      ],
     },
   ];
   return (
@@ -53,13 +120,19 @@ export function Diretoria() {
         </h1>
       </div>
       <div className={style.container}>
-        {diretores.map((diretor, index) => (
-          <CardColaboradores
-            key={index}
-            name={diretor.name}
-            occupation={diretor.occupation}
-            workload={diretor.workload}
-          />
+        {diretoria.map((group, groupIndex) => (
+          <div key={groupIndex} className={style.fomento}>
+            <h1 className={style.titleFomento}>{group.section}</h1>
+            <div className={style.cards}>
+              {group.diretoria.map((diretor, index) => (
+                <CardColaboradores
+                  key={index}
+                  name={diretor.name}
+                  occupation={diretor.occupation}
+                />
+              ))}
+            </div>
+          </div>
         ))}
       </div>
     </>
