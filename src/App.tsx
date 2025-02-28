@@ -18,6 +18,7 @@ import { DocPrestacaoContas } from "./components/transparencia/docPrestacaoConta
 import { Doc2022 } from "./components/transparencia/docPrestacaoContas/2022/2022";
 import { Doc2023 } from "./components/transparencia/docPrestacaoContas/2023/2023";
 import { Doc2024 } from "./components/transparencia/docPrestacaoContas/2024/2024";
+import { Doc2025 } from "./components/transparencia/docPrestacaoContas/2025/2025";
 import { Servicos } from "./components/about/servicos/servicos";
 import { Colaboradores } from "./components/about/colaboradores/colaboradores";
 import { Diretoria } from "./components/about/diretoria/diretoria";
@@ -47,6 +48,7 @@ function App() {
         <Route path="/documentos-2022" element={<Doc2022 />} />
         <Route path="/documentos-2023" element={<Doc2023 />} />
         <Route path="/documentos-2024" element={<Doc2024 />} />
+        <Route path="/documentos-2025" element={<Doc2025 />} />
       </Routes>
       <Footer />
       <ToastContainer />

@@ -17,6 +17,10 @@ export function DocPrestacaoContas() {
       title: "2024",
       link: "/documentos-2024",
     },
+    {
+      title: "2025",
+      link: "/documentos-2025",
+    },
   ];
   return (
     <>

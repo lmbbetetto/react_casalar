@@ -2,11 +2,12 @@ import style from "./colaboradores.module.css";
 
 import imgFundo from "../../../assets/fundo-transparencia.png";
 import { CardColaboradores } from "../../component/card-colaboradores/card-colaboradores";
+import { BtnBack } from "../../component/buttonBack/back";
 
 export function Colaboradores() {
   const colaboradores = [
     {
-      section: "Coordenadenação",
+      section: "Coordenação",
       colaboradores: [
         {
           name: "Andréia Aparecida de Oliveira",
@@ -51,7 +52,7 @@ export function Colaboradores() {
       ],
     },
     {
-      section: "Professores",
+      section: "Instrutores",
       colaboradores: [
         {
           name: "Leandro Monteiro de Siqueira",
@@ -140,6 +141,9 @@ export function Colaboradores() {
           <h1>Colaboradores</h1>
           <h2>Assoc. Casa Lar</h2>
         </div>
+      </div>
+      <div className={style.bntBack}>
+        <BtnBack link="/documentos-2025" />
       </div>
       <div className={style.textTitle}>
         <h1 className={style.textoPrincipal}>

@@ -33,7 +33,7 @@ export function Header() {
                   onMouseEnter={() => setDropdownOpen(true)}
                   onMouseLeave={() => setDropdownOpen(false)}
                 >
-                  <li>Sobre</li>
+                  <li>Assoc. Casa Lar</li>
                   {dropdownOpen && (
                     <ul className="dropdown-menu">
                       <Link to="/sobre">
@@ -41,12 +41,6 @@ export function Header() {
                       </Link>
                       <Link to="/servicos">
                         <li>Serviços</li>
-                      </Link>
-                      <Link to="/diretoria">
-                        <li>Diretoria</li>
-                      </Link>
-                      <Link to="/colaboradores">
-                        <li>Colaboradores</li>
                       </Link>
                     </ul>
                   )}

@@ -1,21 +1,28 @@
 import style from "./style.module.css";
 import { MdOutlinePictureAsPdf } from "react-icons/md";
 
-interface cardProps {
+interface CardProps {
   title: string;
   link: string;
+  newTab?: boolean;
 }
 
-export const CardTransparencia: React.FC<cardProps> = ({ title, link }) => {
+export const CardTransparencia: React.FC<CardProps> = ({
+  title,
+  link,
+  newTab = true,
+}) => {
   return (
-    <>
-      <a href={link} target="_blank">
-        <section className={style.card}>
-          <MdOutlinePictureAsPdf color="black" size={40} />
-          <h1>{title}</h1>
-          <div className={style.btn}></div>
-        </section>
-      </a>
-    </>
+    <a
+      href={link}
+      target={newTab ? "_blank" : "_self"}
+      rel={newTab ? "noopener noreferrer" : undefined}
+    >
+      <section className={style.card}>
+        <MdOutlinePictureAsPdf color="black" size={40} />
+        <h1>{title}</h1>
+        <div className={style.btn}></div>
+      </section>
+    </a>
   );
 };

@@ -2,6 +2,7 @@ import style from "./diretoria.module.css";
 
 import imgFundo from "../../../assets/fundo-transparencia.png";
 import { CardColaboradores } from "../../component/card-colaboradores/card-colaboradores";
+import { BtnBack } from "../../component/buttonBack/back";
 
 export function Diretoria() {
   const diretoria = [
@@ -112,6 +113,9 @@ export function Diretoria() {
           <h1>Diretoria</h1>
           <h2>Assoc. Casa Lar</h2>
         </div>
+      </div>
+      <div className={style.bntBack}>
+        <BtnBack link="/documentos-2025" />
       </div>
       <div className={style.textTitle}>
         <h1 className={style.textoPrincipal}>

@@ -112,7 +112,12 @@
   max-width: 86%;
   display: flex;
   justify-content: center;
-  margin: 0rem auto -4rem auto;
+  margin: -4rem auto -8rem auto;
+}
+
+.bntBack {
+  max-width: 86%;
+  margin: 4rem auto 0 auto;
 }
 
 @media (max-width: 720px) {
