@@ -1,113 +1,118 @@
 .img_fundo {
-    position: relative;
-    z-index: -1;
+  position: relative;
+  z-index: -1;
 }
 
 .sobreHome {
-    width: 86%;
-    margin: -3rem auto;
-    padding: 4rem 10rem;
-    color: var(--color-black);
-    text-align: center;
+  width: 86%;
+  margin: -3rem auto;
+  padding: 4rem 10rem;
+  color: var(--color-black);
+  text-align: center;
 
-    background: var(--color-white);
-    border-radius: 30px;
-    box-shadow: 5px 5px 30px rgba(0,0,0,0.5);
+  background: var(--color-white);
+  border-radius: 30px;
+  box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.5);
+}
+
+.container2 {
+  width: 86%;
+  margin: 6rem auto;
+  display: grid;
+  grid-template-columns: 63.89% 36.11%;
 }
 
 .sobre2Home {
-    width: 86%;
-    margin: 6rem auto;
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
+  margin: 0 3rem 0 0;
 }
 
 .internaHome {
-    background: var(--color-white);
-    width: 100%;
-    border-radius: 30px;
-    padding: 4rem 3rem;
-    color: var(--color-black);
+  background: var(--color-white);
+  width: 100%;
+  border-radius: 30px;
+  padding: 4rem 3rem;
+  color: var(--color-black);
 
-    box-shadow: 5px 5px 30px rgba(0,0,0,0.5);
-    display: flex;
-    flex-direction: column;
-
+  box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
 }
 
 .titulo {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 3rem;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 3rem;
 }
 
 .titulo h1 {
-    font-size: 30px;
+  font-size: 30px;
 }
 
 .titulo h1:after {
-    content: "";
-    display: block;
-    width: 5rem;
-    height: 2.5px;
-    background: var(--color-black);
-    margin: 0 auto;
+  content: "";
+  display: block;
+  width: 5rem;
+  height: 2.5px;
+  background: var(--color-black);
+  margin: 0 auto;
 }
 
 .cards {
-    display: flex;
-    flex-direction: row;
-    gap: 2rem;
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
 }
 
 .btn-conf {
-    width: 6rem;
-    height: 2rem;
-    border-radius: 15px;
-    background: var(--color-green);
-    color: var(--color-white);
-    font-weight: bold;
-    cursor: pointer;
-    transition: var(--transition);
-    margin-top: 2rem;
+  width: 6rem;
+  height: 2rem;
+  border-radius: 15px;
+  background: var(--color-green);
+  color: var(--color-white);
+  font-weight: bold;
+  cursor: pointer;
+  transition: var(--transition);
+  margin-top: 2rem;
 }
 
 .btn-conf:hover {
-    width: 8rem;
+  width: 8rem;
 }
 
 .btn_noticia {
-    width: 12rem;
-    height: 2.5rem;
-    border-radius: 15px;
-    font-weight: bold;
-    background: var(--color-green);
-    color: var(--color-white);
-    cursor: pointer;
-    transition: 0.5s;
+  width: 12rem;
+  height: 2.5rem;
+  border-radius: 15px;
+  font-weight: bold;
+  background: var(--color-green);
+  color: var(--color-white);
+  cursor: pointer;
+  transition: 0.5s;
 }
 
 .btn_noticia:hover {
-    width: 15rem;
+  width: 15rem;
 }
 
 .divbotao {
-    display: flex;
-    justify-content: center;
-    margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
 }
 
 @media (max-width: 720px) {
-    .sobreHome {
-        padding: 1rem 1rem 2rem 1rem;
-    }
+  .sobreHome {
+    padding: 1rem 1rem 2rem 1rem;
+  }
 
-    .cards {
-        flex-direction: column;
-        margin: 0 auto;
-    }
+  .cards {
+    flex-direction: column;
+    margin: 0 auto;
+  }
 
-    .img_fundo {
-        margin-top: 4rem;
-    }
+  .img_fundo {
+    margin-top: 4rem;
+  }
 }

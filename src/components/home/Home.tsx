@@ -15,14 +15,14 @@ export function Home() {
   const noticias = [
     //Adcionar no máximo 5 notícias. Excluir notícias antigas
     {
-      title: "Fotovoltaico",
+      title: "Instalação Sistema Fotovoltaico",
       photo: FTVL,
-      link: "/fotovoltaico",
+      link: "/noticias/fotovoltaico",
     },
     {
       title: "Construção Cobertura Vão Livre",
       photo: CVL,
-      link: "/vaolivre",
+      link: "/noticias/vaolivre",
     },
   ];
   return (
@@ -54,22 +54,46 @@ export function Home() {
         </div>
       </div>
 
-      <section className="sobre2Home">
-        <div className="internaHome">
-          <div className="titulo">
-            <h1>Últimas notícias</h1>
+      <section className="container2">
+        <section className="sobre2Home">
+          <div className="internaHome">
+            <div className="titulo">
+              <h1>Últimas notícias</h1>
+            </div>
+            <div className="cards">
+              {noticias.map((component, index) => (
+                <CardNoticia
+                  key={index}
+                  title={component.title}
+                  link={component.link}
+                  photo={component.photo}
+                />
+              ))}
+            </div>
           </div>
-          <div className="cards">
-            {noticias.map((component, index) => (
-              <CardNoticia
-                key={index}
-                title={component.title}
-                link={component.link}
-                photo={component.photo}
-              />
-            ))}
+        </section>
+
+        <section>
+          <div className="internaHome">
+            <div className="titulo">
+              <h1>Transparência</h1>
+            </div>
+            <div className="cards">
+              <p>
+                A Casa Lar, tem a transparência como um princípio, por isso,
+                disponibilizamos nossos relatórios, balanços e convênios com o
+                poder público !
+              </p>
+            </div>
+            <div className="divbotao">
+              <Link to="/transparencia">
+                <button className="btn_noticia" onClick={scrollToTop}>
+                  Transparência
+                </button>
+              </Link>
+            </div>
           </div>
-        </div>
+        </section>
       </section>
     </>
   );
