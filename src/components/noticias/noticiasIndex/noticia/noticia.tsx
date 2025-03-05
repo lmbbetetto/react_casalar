@@ -21,7 +21,7 @@ export const Cnoticia: React.FC<cNoticias> = ({
   };
   return (
     <>
-      <section className={style.noticia}>
+      <div className={style.noticia}>
         <img src={photo} alt="foto noticia" />
         <div className={style.texto}>
           <div className={style.body}>
@@ -33,7 +33,7 @@ export const Cnoticia: React.FC<cNoticias> = ({
             </Link>
           </div>
         </div>
-      </section>
+      </div>
     </>
   );
 };
