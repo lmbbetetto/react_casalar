@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import style from "./style.module.css";
 import { MdOutlinePictureAsPdf } from "react-icons/md";
 
@@ -13,8 +14,8 @@ export const CardTransparencia: React.FC<CardProps> = ({
   newTab = true,
 }) => {
   return (
-    <a
-      href={link}
+    <Link
+      to={link}
       target={newTab ? "_blank" : "_self"}
       rel={newTab ? "noopener noreferrer" : undefined}
     >
@@ -23,6 +24,6 @@ export const CardTransparencia: React.FC<CardProps> = ({
         <h1>{title}</h1>
         <div className={style.btn}></div>
       </section>
-    </a>
+    </Link>
   );
 };
