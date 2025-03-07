@@ -1,0 +1,70 @@
+.card {
+  max-width: 40rem;
+  height: 4rem;
+  padding: 0 0 0 2rem;
+  background: var(--color-white);
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
+
+.card svg {
+  margin: 0 2rem 0 0;
+}
+
+.card h1 {
+  font-size: 20px;
+  color: var(--color-black);
+}
+
+.card:hover {
+  background: var(--color-green);
+}
+
+.card:hover h1 {
+  color: var(--color-white);
+}
+
+.card:hover svg {
+  fill: var(--color-white);
+}
+
+.btn {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  margin-top: auto;
+}
+
+.btn button {
+  width: 15rem;
+  padding: 1rem 10rem;
+  background: transparent;
+  color: var(--color-red);
+  border: var(--color-red) 2px solid;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 10px;
+  transition: 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn button:hover {
+  background: var(--color-red);
+  color: var(--color-white);
+}
+
+@media (max-width: 720px) {
+  .card {
+    margin: 0;
+    width: 22rem;
+  }
+
+  .card button {
+    width: 10rem;
+  }
+}
