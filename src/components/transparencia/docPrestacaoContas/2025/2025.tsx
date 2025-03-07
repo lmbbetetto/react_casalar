@@ -4,7 +4,10 @@ import style from "./style.module.css";
 
 import imgFundo from "../../../../assets/fundo-transparencia.png";
 
-// import PDF1 from "../../../../assets/transparencia/2024/TF-01-2022-TA-07-2024/TF-01-2022.pdf";
+import PDF1 from "../../../../assets/transparencia/2025/TA-06-2025.pdf";
+import PDF2 from "../../../../assets/transparencia/2025/TA-07-2025.pdf";
+import PDF3 from "../../../../assets/transparencia/2025/TF-01-2022.pdf";
+import PDF4 from "../../../../assets/transparencia/2025/TF-05-2022.pdf";
 
 export function Doc2025() {
   const documents2024 = [
@@ -20,6 +23,46 @@ export function Doc2025() {
           title: "Colaboradores",
           link: "/colaboradores",
           newTab: false,
+        },
+      ],
+    },
+    {
+      name: "TF 01/2022",
+      documents: [
+        {
+          title: "TF 01/2022",
+          link: PDF3,
+          newTab: true,
+        },
+      ],
+    },
+    {
+      name: "TF 05/2022",
+      documents: [
+        {
+          title: "TF 05/2022",
+          link: PDF4,
+          newTab: true,
+        },
+      ],
+    },
+    {
+      name: "TA 06/2025",
+      documents: [
+        {
+          title: "TA 06/2025",
+          link: PDF1,
+          newTab: true,
+        },
+      ],
+    },
+    {
+      name: "TA 07/2025",
+      documents: [
+        {
+          title: "TA 07/2025",
+          link: PDF2,
+          newTab: true,
         },
       ],
     },
