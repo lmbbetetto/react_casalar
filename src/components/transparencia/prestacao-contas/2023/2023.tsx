@@ -1,5 +1,5 @@
 import { BtnBack } from "../../../component/buttonBack/back";
-import { CardTransparencia } from "../../cardTransparencia";
+import { CardTransparencia } from "../../card-transparencia";
 import style from "./style.module.css";
 
 import imgFundo from "../../../../assets/fundo-transparencia.png";
@@ -38,6 +38,7 @@ import PDF23 from "../../../../assets/transparencia/2023/TF-11-2023/TF-11-2023.p
 
 import PDF24 from "../../../../assets/transparencia/2023/TF-14-23/Parecer-conclusivo-TF-14-2023.pdf";
 import PDF25 from "../../../../assets/transparencia/2023/TF-14-23/TF-14-23-CASA-LAR-completo.pdf";
+import { MdOutlinePictureAsPdf } from "react-icons/md";
 
 export function Doc2023() {
   const documents2023 = [
@@ -205,7 +206,7 @@ export function Doc2023() {
       </div>
 
       <div className={style.container}>
-        <BtnBack link="/docprestacaocontas" />
+        <BtnBack link="/transparencia/prestacao-contas" />
         <h1 className={style.textoPrincipal}>
           A <span className={style.textoPrincipalGreen}>Casa Lar</span>, tem a
           <span className={style.textoPrincipalGreen}> transparência </span>
@@ -225,6 +226,7 @@ export function Doc2023() {
                   key={`${groupIndex}-${docIndex}`}
                   title={document.title}
                   link={document.link}
+                  icon={<MdOutlinePictureAsPdf />}
                 />
               ))}
             </div>

@@ -1,5 +1,5 @@
 import { BtnBack } from "../../../component/buttonBack/back";
-import { CardTransparencia } from "../../cardTransparencia";
+import { CardTransparencia } from "../../card-transparencia";
 import style from "./style.module.css";
 
 import imgFundo from "../../../../assets/fundo-transparencia.png";
@@ -8,6 +8,7 @@ import PDF1 from "../../../../assets/transparencia/2025/TA-06-2025.pdf";
 import PDF2 from "../../../../assets/transparencia/2025/TA-07-2025.pdf";
 import PDF3 from "../../../../assets/transparencia/2025/TF-01-2022.pdf";
 import PDF4 from "../../../../assets/transparencia/2025/TF-05-2022.pdf";
+import { MdOutlinePictureAsPdf } from "react-icons/md";
 
 export function Doc2025() {
   const documents2025 = [
@@ -16,52 +17,42 @@ export function Doc2025() {
       documents: [
         {
           title: "Diretoria",
-          link: "/diretoria",
+          link: "/transparencia/prestacao-contas/documentos-2025/diretoria",
           newTab: false,
         },
         {
           title: "Colaboradores",
-          link: "/colaboradores",
+          link: "/transparencia/prestacao-contas/documentos-2025/colaboradores",
           newTab: false,
         },
       ],
     },
     {
-      name: "TF 01/2022",
+      name: "TF 01/2022 | TA 07/2025",
       documents: [
         {
           title: "TF 01/2022",
           link: PDF3,
           newTab: true,
         },
+        {
+          title: "TA 07/2025",
+          link: PDF2,
+          newTab: true,
+        },
       ],
     },
     {
-      name: "TF 05/2022",
+      name: "TF 05/2022 | TA 06/2025",
       documents: [
         {
           title: "TF 05/2022",
           link: PDF4,
           newTab: true,
         },
-      ],
-    },
-    {
-      name: "TA 06/2025",
-      documents: [
         {
           title: "TA 06/2025",
           link: PDF1,
-          newTab: true,
-        },
-      ],
-    },
-    {
-      name: "TA 07/2025",
-      documents: [
-        {
-          title: "TA 07/2025",
-          link: PDF2,
           newTab: true,
         },
       ],
@@ -80,7 +71,7 @@ export function Doc2025() {
       </div>
 
       <div className={style.container}>
-        <BtnBack link="/docprestacaocontas" />
+        <BtnBack link="/transparencia/prestacao-contas" />
         <h1 className={style.textoPrincipal}>
           A <span className={style.textoPrincipalGreen}>Casa Lar</span>, tem a
           <span className={style.textoPrincipalGreen}> transparência </span>
@@ -100,6 +91,7 @@ export function Doc2025() {
                   title={document.title}
                   link={document.link}
                   newTab={document.newTab}
+                  icon={<MdOutlinePictureAsPdf />}
                 />
               ))}
             </div>

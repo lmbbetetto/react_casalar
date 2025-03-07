@@ -1,5 +1,5 @@
 import { BtnBack } from "../../../component/buttonBack/back";
-import { CardTransparencia } from "../../cardTransparencia";
+import { CardTransparencia } from "../../card-transparencia";
 import style from "./style.module.css";
 
 import imgFundo from "../../../../assets/fundo-transparencia.png";
@@ -22,6 +22,7 @@ import PDF10 from "../../../../assets/transparencia/2024/TF-05-2022-TA-11-2024/T
 import PDF11 from "../../../../assets/transparencia/2024/TF-05-2022-TA-11-2024/TA-11-2024.pdf";
 
 import PDF12 from "../../../../assets/transparencia/2024/TF-11-2024/TF-11-2024.pdf";
+import { MdOutlinePictureAsPdf } from "react-icons/md";
 
 export function Doc2024() {
   const documents2024 = [
@@ -122,7 +123,7 @@ export function Doc2024() {
       </div>
 
       <div className={style.container}>
-        <BtnBack link="/docprestacaocontas" />
+        <BtnBack link="/transparencia/prestacao-contas" />
         <h1 className={style.textoPrincipal}>
           A <span className={style.textoPrincipalGreen}>Casa Lar</span>, tem a
           <span className={style.textoPrincipalGreen}> transparência </span>
@@ -142,6 +143,7 @@ export function Doc2024() {
                   key={`${groupIndex}-${docIndex}`}
                   title={document.title}
                   link={document.link}
+                  icon={<MdOutlinePictureAsPdf />}
                 />
               ))}
             </div>

@@ -115,7 +115,7 @@ export function Diretoria() {
         </div>
       </div>
       <div className={style.bntBack}>
-        <BtnBack link="/documentos-2025" />
+        <BtnBack link="/transparencia/prestacao-contas/documentos-2025" />
       </div>
       <div className={style.textTitle}>
         <h1 className={style.textoPrincipal}>

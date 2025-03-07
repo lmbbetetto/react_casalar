@@ -1,5 +1,5 @@
 import { BtnBack } from "../../../component/buttonBack/back";
-import { CardTransparencia } from "../../cardTransparencia";
+import { CardTransparencia } from "../../card-transparencia";
 import style from "./style.module.css";
 import imgFundo from "../../../../assets/fundo-transparencia.png";
 
@@ -45,6 +45,7 @@ import PDF18 from "../../../../assets/transparencia/2022/QUADRA/TERMO DE FOMENTO
 
 // VAO LIVRE
 import PDF19 from "../../../../assets/transparencia/2022/COBERTURA VÃO LIVRE/TERMO DE FOMENTO COMPLETO ASSINADO.pdf";
+import { MdOutlinePictureAsPdf } from "react-icons/md";
 
 export function Doc2022() {
   const TF01_2022 = [
@@ -165,7 +166,7 @@ export function Doc2022() {
       </div>
 
       <div className={style.container}>
-        <BtnBack link="/docprestacaocontas" />
+        <BtnBack link="/transparencia/prestacao-contas" />
         <h1 className={style.textoPrincipal}>
           A <span className={style.textoPrincipalGreen}>Casa Lar</span>, tem a
           <span className={style.textoPrincipalGreen}> transparência </span>
@@ -184,6 +185,7 @@ export function Doc2022() {
                 key={index}
                 title={component.title}
                 link={component.link}
+                icon={<MdOutlinePictureAsPdf />}
               />
             ))}
           </div>
@@ -197,6 +199,7 @@ export function Doc2022() {
                 key={index}
                 title={component.title}
                 link={component.link}
+                icon={<MdOutlinePictureAsPdf />}
               />
             ))}
           </div>
@@ -210,6 +213,7 @@ export function Doc2022() {
                 key={index}
                 title={component.title}
                 link={component.link}
+                icon={<MdOutlinePictureAsPdf />}
               />
             ))}
           </div>
@@ -223,6 +227,7 @@ export function Doc2022() {
                 key={index}
                 title={component.title}
                 link={component.link}
+                icon={<MdOutlinePictureAsPdf />}
               />
             ))}
           </div>
@@ -236,6 +241,7 @@ export function Doc2022() {
                 key={index}
                 title={component.title}
                 link={component.link}
+                icon={<MdOutlinePictureAsPdf />}
               />
             ))}
           </div>
@@ -249,6 +255,7 @@ export function Doc2022() {
                 key={index}
                 title={component.title}
                 link={component.link}
+                icon={<MdOutlinePictureAsPdf />}
               />
             ))}
           </div>
@@ -262,6 +269,7 @@ export function Doc2022() {
                 key={index}
                 title={component.title}
                 link={component.link}
+                icon={<MdOutlinePictureAsPdf />}
               />
             ))}
           </div>
@@ -275,6 +283,7 @@ export function Doc2022() {
                 key={index}
                 title={component.title}
                 link={component.link}
+                icon={<MdOutlinePictureAsPdf />}
               />
             ))}
           </div>
@@ -290,6 +299,7 @@ export function Doc2022() {
                 key={index}
                 title={component.title}
                 link={component.link}
+                icon={<MdOutlinePictureAsPdf />}
               />
             ))}
           </div>
@@ -306,6 +316,7 @@ export function Doc2022() {
                 key={index}
                 title={component.title}
                 link={component.link}
+                icon={<MdOutlinePictureAsPdf />}
               />
             ))}
           </div>
@@ -322,6 +333,7 @@ export function Doc2022() {
                 key={index}
                 title={component.title}
                 link={component.link}
+                icon={<MdOutlinePictureAsPdf />}
               />
             ))}
           </div>

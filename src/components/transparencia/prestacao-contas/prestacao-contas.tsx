@@ -1,25 +1,30 @@
 import { BtnBack } from "../../component/buttonBack/back";
 import style from "./style.module.css";
 import imgFundo from "../../../assets/fundo-transparencia.png";
-import { CardDocs } from "../../component/card-docs/card-docs";
+import { CardTransparencia } from "../card-transparencia";
+import { IoDocumentOutline } from "react-icons/io5";
 
 export function DocPrestacaoContas() {
   const cards = [
     {
       title: "2022",
-      link: "/documentos-2022",
+      link: "/transparencia/prestacao-contas/documentos-2022",
+      newTab: false,
     },
     {
       title: "2023",
-      link: "/documentos-2023",
+      link: "/transparencia/prestacao-contas/documentos-2023",
+      newTab: false,
     },
     {
       title: "2024",
-      link: "/documentos-2024",
+      link: "/transparencia/prestacao-contas/documentos-2024",
+      newTab: false,
     },
     {
       title: "2025",
-      link: "/documentos-2025",
+      link: "/transparencia/prestacao-contas/documentos-2025",
+      newTab: false,
     },
   ];
   return (
@@ -34,7 +39,6 @@ export function DocPrestacaoContas() {
       </div>
 
       <div className={style.container}>
-        <BtnBack link="/transparencia" />
         <h1 className={style.textoPrincipal}>
           A <span className={style.textoPrincipalGreen}>Casa Lar</span>, tem a
           <span className={style.textoPrincipalGreen}> transparência </span>
@@ -44,9 +48,16 @@ export function DocPrestacaoContas() {
           </span>
           !
         </h1>
+        <BtnBack link="/transparencia" />
         <div className={style.cards}>
           {cards.map((card, index) => (
-            <CardDocs key={index} link={card.link} title={card.title} />
+            <CardTransparencia
+              key={index}
+              link={card.link}
+              title={card.title}
+              newTab={card.newTab}
+              icon={<IoDocumentOutline />}
+            />
           ))}
         </div>
       </div>

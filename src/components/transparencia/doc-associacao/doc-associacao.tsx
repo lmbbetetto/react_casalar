@@ -1,5 +1,5 @@
 import { BtnBack } from "../../component/buttonBack/back";
-import { CardTransparencia } from "../cardTransparencia";
+import { CardTransparencia } from "../card-transparencia";
 import style from "./style.module.css";
 import imgFundo from "../../../assets/fundo-transparencia.png";
 
@@ -7,6 +7,7 @@ import PDF1 from "../../../assets/transparencia/documentosAssociacao/ASSOCIACAO 
 import PDF2 from "../../../assets/transparencia/documentosAssociacao/ATA ALTERAÇÃO E CONSOLIDAÇÃO 10º ESTATUTO - nov 2022.pdf";
 import PDF3 from "../../../assets/transparencia/documentosAssociacao/Ata eleição e posse 2023 2024.pdf";
 import PDF4 from "../../../assets/transparencia/documentosAssociacao/TERMO DE POSSE ANO 2023.2024.pdf";
+import { MdOutlinePictureAsPdf } from "react-icons/md";
 
 export function DocAssociacao() {
   const documents = [
@@ -55,6 +56,7 @@ export function DocAssociacao() {
               key={index}
               title={component.title}
               link={component.link}
+              icon={<MdOutlinePictureAsPdf />}
             />
           ))}
         </div>

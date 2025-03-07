@@ -13,12 +13,12 @@ import { NotIndex } from "./components/noticias/noticiasIndex/notIndex";
 import { Transparencia } from "./components/transparencia";
 import { Contact } from "./components/contact";
 import { Apoie } from "./components/apoie";
-import { DocAssociacao } from "./components/transparencia/docAssociacao/DocAssociacao";
-import { DocPrestacaoContas } from "./components/transparencia/docPrestacaoContas/docPrestacaoContas";
-import { Doc2022 } from "./components/transparencia/docPrestacaoContas/2022/2022";
-import { Doc2023 } from "./components/transparencia/docPrestacaoContas/2023/2023";
-import { Doc2024 } from "./components/transparencia/docPrestacaoContas/2024/2024";
-import { Doc2025 } from "./components/transparencia/docPrestacaoContas/2025/2025";
+import { DocAssociacao } from "./components/transparencia/doc-associacao/doc-associacao";
+import { DocPrestacaoContas } from "./components/transparencia/prestacao-contas/prestacao-contas";
+import { Doc2022 } from "./components/transparencia/prestacao-contas/2022/2022";
+import { Doc2023 } from "./components/transparencia/prestacao-contas/2023/2023";
+import { Doc2024 } from "./components/transparencia/prestacao-contas/2024/2024";
+import { Doc2025 } from "./components/transparencia/prestacao-contas/2025/2025";
 import { Servicos } from "./components/about/servicos/servicos";
 import { Colaboradores } from "./components/about/colaboradores/colaboradores";
 import { Diretoria } from "./components/about/diretoria/diretoria";
@@ -31,8 +31,6 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/sobre" element={<About />} />
         <Route path="/servicos" element={<Servicos />} />
-        <Route path="/colaboradores" element={<Colaboradores />} />
-        <Route path="/diretoria" element={<Diretoria />} />
         <Route path="/contato" element={<Contact />} />
         <Route path="/apoie" element={<Apoie />} />
 
@@ -43,12 +41,38 @@ function App() {
 
         {/* Transparência */}
         <Route path="/transparencia" element={<Transparencia />} />
-        <Route path="/docassociacao" element={<DocAssociacao />} />
-        <Route path="/docprestacaocontas" element={<DocPrestacaoContas />} />
-        <Route path="/documentos-2022" element={<Doc2022 />} />
-        <Route path="/documentos-2023" element={<Doc2023 />} />
-        <Route path="/documentos-2024" element={<Doc2024 />} />
-        <Route path="/documentos-2025" element={<Doc2025 />} />
+        <Route
+          path="/transparencia/documentos-associacao"
+          element={<DocAssociacao />}
+        />
+        <Route
+          path="/transparencia/prestacao-contas"
+          element={<DocPrestacaoContas />}
+        />
+        <Route
+          path="/transparencia/prestacao-contas/documentos-2022"
+          element={<Doc2022 />}
+        />
+        <Route
+          path="/transparencia/prestacao-contas/documentos-2023"
+          element={<Doc2023 />}
+        />
+        <Route
+          path="/transparencia/prestacao-contas/documentos-2024"
+          element={<Doc2024 />}
+        />
+        <Route
+          path="/transparencia/prestacao-contas/documentos-2025"
+          element={<Doc2025 />}
+        />
+        <Route
+          path="/transparencia/prestacao-contas/documentos-2025/colaboradores"
+          element={<Colaboradores />}
+        />
+        <Route
+          path="/transparencia/prestacao-contas/documentos-2025/diretoria"
+          element={<Diretoria />}
+        />
       </Routes>
       <Footer />
       <ToastContainer />

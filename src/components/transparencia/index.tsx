@@ -2,8 +2,22 @@ import style from "./style.module.css";
 
 import imgFundo from "../../assets/fundo-transparencia.png";
 import { CardDocs } from "../component/card-docs/card-docs";
+import { CardTransparencia } from "./card-transparencia";
+import { IoDocumentOutline } from "react-icons/io5";
 
 export function Transparencia() {
+  const cards = [
+    {
+      title: "Documentos Associação",
+      link: "/transparencia/documentos-associacao",
+      newTab: false,
+    },
+    {
+      title: "Prestação de Contas",
+      link: "/transparencia/prestacao-contas",
+      newTab: false,
+    },
+  ];
   return (
     <>
       <div className={style.titulo}>
@@ -25,8 +39,15 @@ export function Transparencia() {
           !
         </h1>
         <div className={style.cards}>
-          <CardDocs link="/docassociacao" title="Documentos Associação" />
-          <CardDocs link="/docprestacaocontas" title="Prestação de Contas" />
+          {cards.map((card, index) => (
+            <CardTransparencia
+              key={index}
+              link={card.link}
+              title={card.title}
+              newTab={card.newTab}
+              icon={<IoDocumentOutline />}
+            />
+          ))}
         </div>
       </div>
     </>
