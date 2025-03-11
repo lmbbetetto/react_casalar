@@ -22,6 +22,7 @@ import { Doc2025 } from "./components/transparencia/prestacao-contas/2025/2025";
 import { Servicos } from "./components/about/servicos/servicos";
 import { Colaboradores } from "./components/about/colaboradores/colaboradores";
 import { Diretoria } from "./components/about/diretoria/diretoria";
+import { Fotos } from "./components/about/fotos/fotos";
 
 function App() {
   return (
@@ -33,6 +34,7 @@ function App() {
         <Route path="/servicos" element={<Servicos />} />
         <Route path="/contato" element={<Contact />} />
         <Route path="/apoie" element={<Apoie />} />
+        <Route path="/galeria-fotos" element={<Fotos />} />
 
         {/* Noticias */}
         <Route path="/noticias" element={<NotIndex />} />

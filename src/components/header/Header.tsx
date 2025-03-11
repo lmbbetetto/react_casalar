@@ -42,6 +42,9 @@ export function Header() {
                       <Link to="/servicos">
                         <li>Serviços</li>
                       </Link>
+                      <Link to="/galeria-fotos">
+                        <li>Galeria de Fotos</li>
+                      </Link>
                     </ul>
                   )}
                 </div>
