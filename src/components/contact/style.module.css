@@ -1,120 +1,157 @@
 .container {
-    max-width: 60%;
-    margin: 4rem auto 0 auto;
-    border-radius: 30px;
-}
-
-.titulo {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 6rem;
-}
-
-.titulo h1 {
-    font-size: 35px;
-    font-weight: bold;
-    color: var(--color-black);
-}
-
-.titulo h1:after {
-    content: "";
-    display: block;
-    width: 5rem;
-    height: 2.5px;
-    background: var(--color-black);
-    margin: 0 auto;
-    border-radius: 3rem;
+  max-width: 60%;
+  margin: 4rem auto 0 auto;
+  border-radius: 30px;
 }
 
 .containerContact {
-    display: grid;
-    grid-template-columns: 40% 60%;
+  display: grid;
+  grid-template-columns: 40% 60%;
 }
 
 .contact__options {
-    display: flex;
-    flex-direction: column;
-    gap: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
 }
 
 .contact__option {
-    max-width: 80%;
-    width: 100%;
-    color: var(--color-white);
-    background: var(--color-green);
-    padding: 1.2rem;
-    border-radius: 15px;
-    text-align: center;
-    border: 1px solid transparent;
-    transition: var(--transition);
-    box-shadow: 5px 5px 30px rgba(0,0,0,0.34);
+  max-width: 80%;
+  width: 100%;
+  color: var(--color-white);
+  background: var(--color-green);
+  padding: 1.2rem;
+  border-radius: 15px;
+  text-align: center;
+  border: 1px solid transparent;
+  transition: var(--transition);
+  box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.34);
 }
 
 .contact__option_icon {
-    font-size: 1.5rem;
-    /* margin-bottom: 0.5rem; */
+  font-size: 1.5rem;
+  /* margin-bottom: 0.5rem; */
 }
 
 .contact__option a {
-    margin-top: 0.7rem;
-    display: inline-block;
-    font-size: 0.8rem;
-    color: var(--color-white);
-    transition: 0.2s;
+  margin-top: 0.7rem;
+  display: inline-block;
+  font-size: 0.8rem;
+  color: var(--color-white);
+  transition: 0.2s;
 }
 
 .contact__option a:hover {
-    color: var(--color-yellow);
+  color: var(--color-yellow);
 }
 
 form {
-    display: flex;
-    flex-direction: column;
-    gap: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
 }
 
-input, textarea {
-    width: 100%;
-    padding: 1.5rem;
-    border-radius: 15px;
-    background: var(--color-white);
-    border: 2px solid var(--color-white);
-    resize: none;
-    color: var(--color-black);
+input,
+textarea {
+  width: 100%;
+  padding: 1.5rem;
+  border-radius: 15px;
+  background: var(--color-white);
+  border: 2px solid var(--color-white);
+  resize: none;
+  color: var(--color-black);
 }
 
 .btnForm {
-    background: var(--color-green);
-    padding: 1rem 4rem;
-    color: var(--color-white);
-    font-weight: bold;
-    border-radius: 15px;
-    margin: 0 auto;
-    cursor: pointer;
-    transition: 0.2s;
+  background: var(--color-green);
+  padding: 1rem 4rem;
+  color: var(--color-white);
+  font-weight: bold;
+  border-radius: 15px;
+  margin: 0 auto;
+  cursor: pointer;
+  transition: 0.2s;
 }
 
 .btnForm:hover {
-    /* width: 15rem; */
-    opacity: 50%;
+  /* width: 15rem; */
+  opacity: 50%;
+}
+
+.titulo {
+  display: grid;
+  grid-template-columns: 36.11% 63.89%;
+  align-items: center;
+}
+
+.tituloTexto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 3rem;
+  background: white;
+  height: 100%;
+  padding-left: 9rem;
+}
+
+.tituloTexto h2 {
+  color: var(--color-green);
+}
+
+.tituloTexto p {
+  color: var(--color-black);
+  margin-bottom: 2.375rem;
+}
+
+.imgFundo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.titulo h1 {
+  font-size: 35px;
+  font-weight: bold;
+  color: var(--color-black);
+}
+
+.textoPrincipal {
+  text-align: left;
+  color: var(--color-black);
+  font-size: 28px;
+  margin: -4rem 0 1rem 0;
+  text-align: center;
+}
+
+.textoPrincipalGreen {
+  text-align: left;
+  color: var(--color-green);
+  font-size: 28px;
+}
+
+.textTitle {
+  max-width: 86%;
+  display: flex;
+  justify-content: center;
+  margin: 8rem auto 5rem auto;
 }
 
 @media (max-width: 720px) {
-    .container {
-        max-width: 86%;
-        margin: 8rem auto 0 auto;
-    }
+  .container {
+    max-width: 86%;
+    margin: 8rem auto 0 auto;
+  }
 
-    .containerContact {
-        display: flex;
-        flex-direction: column;
-    }
+  .containerContact {
+    display: flex;
+    flex-direction: column;
+  }
 
-    .contact__option {
-        max-width: 100%;
-    }
+  .contact__option {
+    max-width: 100%;
+  }
 
-    form {
-        margin: 4rem 0 0 0;
-    }
+  form {
+    margin: 4rem 0 0 0;
+  }
 }

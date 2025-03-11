@@ -6,6 +6,10 @@ import imgFundo from "../../../../assets/fundo-transparencia.png";
 
 import PDF1 from "../../../../assets/transparencia/2024/TF-01-2022-TA-07-2024/TF-01-2022.pdf";
 import PDF2 from "../../../../assets/transparencia/2024/TF-01-2022-TA-07-2024/TA-07-2024.pdf";
+import PDF13 from "../../../../assets/transparencia/2024/TF-01-2022-TA-07-2024/2-quad-RP10-Estadual-2024.pdf";
+import PDF14 from "../../../../assets/transparencia/2024/TF-01-2022-TA-07-2024/Anual-RP10-Estadual-2024.pdf";
+import PDF15 from "../../../../assets/transparencia/2024/TF-01-2022-TA-07-2024/Estadual-RP-10-1-Quadr.pdf";
+import PDF16 from "../../../../assets/transparencia/2024/TF-01-2022-TA-07-2024/TA-58-2024.pdf";
 
 import PDF3 from "../../../../assets/transparencia/2024/TF-01-2024/TF-01-2024.pdf";
 
@@ -27,15 +31,31 @@ import { MdOutlinePictureAsPdf } from "react-icons/md";
 export function Doc2024() {
   const documents2024 = [
     {
-      name: "TF 01/2022 | TA 07/2024",
+      name: "TF 01/2022 | TA 07/2024 | TA 58/2024",
       documents: [
         {
-          title: "Termo de Fomento",
+          title: "TF 01/2022",
           link: PDF1,
         },
         {
-          title: "Termo de Aditivo",
+          title: "TA 07/2024",
           link: PDF2,
+        },
+        {
+          title: "TA 58/2024",
+          link: PDF16,
+        },
+        {
+          title: "RP-10 - 1 Quadrimestre",
+          link: PDF15,
+        },
+        {
+          title: "RP-10 - 2 Quadrimestre",
+          link: PDF13,
+        },
+        {
+          title: "RP-10 - Anual",
+          link: PDF14,
         },
       ],
     },

@@ -6,6 +6,14 @@
   align-items: flex-start;
 }
 
+.container2 {
+  margin: 4rem auto 0 auto;
+  max-width: 86%;
+  display: grid;
+  grid-template-columns: 35% 65%;
+  align-items: flex-start;
+}
+
 .card {
   background: var(--color-white);
   border-radius: 30px;
@@ -38,6 +46,54 @@
 
 .paragraph {
   margin: 0 0 1rem 0;
+}
+
+.imgCards {
+  border-radius: 20px;
+  height: 20rem;
+  width: 20rem;
+
+  margin: 0 0 0 8rem;
+}
+
+.imgCards1 {
+  border-radius: 20px;
+  height: 20rem;
+  width: 20rem;
+
+  margin: -5rem 0 0 0;
+}
+
+.imgCards2 {
+  border-radius: 20px;
+  height: 20rem;
+  width: 20rem;
+
+  margin: -5rem 0 0 8rem;
+}
+
+.imgCard {
+  border-radius: 20px;
+  height: 20rem;
+  width: 20rem;
+
+  margin: 0 0 0 0;
+}
+
+.imgCard1 {
+  border-radius: 20px;
+  height: 20rem;
+  width: 20rem;
+
+  margin: -5rem 0 0 8rem;
+}
+
+.imgCard2 {
+  border-radius: 20px;
+  height: 20rem;
+  width: 20rem;
+
+  margin: -5rem 0 0 0;
 }
 
 /* Header */

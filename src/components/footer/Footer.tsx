@@ -45,7 +45,10 @@ export function Footer() {
           >
             <BsFacebook />
           </a>
-          <a href="https://www.instagram.com/projeto.cara/" target="_blank">
+          <a
+            href="https://www.instagram.com/projetocara.casalar/"
+            target="_blank"
+          >
             <BsInstagram />
           </a>
         </div>
