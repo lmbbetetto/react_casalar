@@ -4,7 +4,7 @@ import { SiCashapp } from "react-icons/si";
 import { RiHandHeartFill } from "react-icons/ri";
 import { MdAccountBalance } from "react-icons/md";
 
-import imgFundo from "../../assets/fundo-transparencia.png";
+import imgFundo from "../../assets/support-photo.jpg";
 
 export function Apoie() {
   return (

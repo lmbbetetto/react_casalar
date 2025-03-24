@@ -47,7 +47,7 @@ export function Servicos() {
             promissor.
           </p>
         </div>
-        <div className={style.card}>
+        <div className={style.card2}>
           <img
             src={imgFundo}
             alt="Imagem de fundo"
@@ -67,7 +67,7 @@ export function Servicos() {
       </div>
 
       <div className={style.container2}>
-        <div className={style.card}>
+        <div className={style.card2}>
           <img src={imgFundo} alt="Imagem de fundo" className={style.imgCard} />
           <img
             src={imgFundo}

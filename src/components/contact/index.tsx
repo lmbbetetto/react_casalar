@@ -8,7 +8,7 @@ import { AiFillInstagram } from "react-icons/ai";
 import emailjs, { EmailJSResponseStatus } from "@emailjs/browser";
 import { useRef, FormEvent, useState } from "react";
 
-import imgFundo from "../../assets/fundo-transparencia.png";
+import imgFundo from "../../assets/contact-photo.jpg";
 
 export function Contact() {
   const form = useRef<HTMLFormElement | null>(null);

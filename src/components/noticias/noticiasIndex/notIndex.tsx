@@ -1,7 +1,7 @@
 import style from "./styles.module.css";
 import { Cnoticia } from "./noticia/noticia";
 
-import imgFundo from "../../../assets/fundo-transparencia.png";
+import imgFundo from "../../../assets/news-photo.jpg";
 
 import FVLT from "../../../assets/fotovoltaico.jpeg";
 import CVL from "../../../assets/vaolivre.jpeg";
