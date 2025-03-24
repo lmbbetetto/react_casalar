@@ -8,11 +8,11 @@ import { ArquivoIndisp } from "../../component/arquivoIndisp/indisp";
 export function Fotos() {
   const diretoria = [
     {
-      section: "Presidente",
+      section: "",
       diretoria: [
         {
-          name: "Claudemir Targino da Silva",
-          occupation: "Presidente",
+          name: "",
+          occupation: "",
         },
       ],
     },

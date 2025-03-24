@@ -81,22 +81,15 @@ export function Header() {
                 <Link to="/">
                   <li>Início</li>
                 </Link>
-                <div className="dropdown-mobile">
-                  <Link to="/sobre">
-                    <li>Sobre</li>
-                  </Link>
-                  <ul className="dropdown-menu-mobile">
-                    <Link to="/sobre/historia">
-                      <li>História</li>
-                    </Link>
-                    <Link to="/sobre/missao">
-                      <li>Missão</li>
-                    </Link>
-                    <Link to="/sobre/equipe">
-                      <li>Equipe</li>
-                    </Link>
-                  </ul>
-                </div>
+                <Link to="/sobre">
+                  <li>História</li>
+                </Link>
+                <Link to="/servicos">
+                  <li>Serviços</li>
+                </Link>
+                <Link to="/galeria-fotos">
+                  <li>Fotos</li>
+                </Link>
                 <Link to="/transparencia">
                   <li>Transparência</li>
                 </Link>
