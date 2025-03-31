@@ -1,5 +1,8 @@
 .containerMenu {
   background: var(--color-white);
+
+  position: relative;
+  z-index: 100;
 }
 
 .menu {
@@ -71,6 +74,9 @@
   align-items: flex-end;
 
   padding: 2rem 7rem 0 0;
+
+  position: relative;
+  z-index: 100;
 }
 
 .container_mobile button {

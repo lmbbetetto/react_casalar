@@ -6,6 +6,7 @@
   display: flex;
   justify-content: flex-start;
   flex-direction: column;
+  margin-top: -25rem;
 }
 
 /* Header */
@@ -14,7 +15,7 @@
   display: grid;
   grid-template-columns: 36.11% 63.89%;
   align-items: stretch;
-  height: 27rem;
+  height: 60rem;
 }
 
 .tituloTexto {
@@ -52,7 +53,7 @@
   text-align: left;
   color: var(--color-black);
   font-size: 28px;
-  margin: -4rem 0 1rem 0;
+  margin: -30rem 0 1rem 0;
   text-align: center;
 }
 

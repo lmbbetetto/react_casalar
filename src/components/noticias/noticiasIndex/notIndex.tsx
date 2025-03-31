@@ -5,9 +5,18 @@ import imgFundo from "../../../assets/news-photo.jpg";
 
 import FVLT from "../../../assets/fotovoltaico.jpeg";
 import CVL from "../../../assets/vaolivre.jpeg";
+import CAR from "../../../assets/carro-2.jpeg";
 
 export function NotIndex() {
   const noticias = [
+    {
+      title: "Aquisição de Automóvel através de Emenda Parlamentar",
+      link: "/noticias/aquisicao-automovel",
+      paragraph:
+        "Em outubro de 2023, a Associação Casa Lar recebeu um automóvel modelo Spin, adquirido por meio de uma Emenda Parlamentar do Deputado Estadual Vinicius Camarinha. A entrega foi feita pelo assessor Ian Salomão à equipe da instituição. O veículo visa melhorar o transporte dos atendidos e a realização de atividades essenciais, proporcionando mais eficiência e segurança nas operações diárias da Casa Lar. Essa aquisição representa um avanço significativo na mobilidade e logística da instituição.",
+      photo: CAR,
+      date: "10/2023 - Andréia Oliveira",
+    },
     {
       title: "Fotovoltaico",
       link: "/noticias/fotovoltaico",

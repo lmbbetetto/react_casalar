@@ -1,31 +1,30 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
+  .main_mobile {
+    display: none;
+  }
 
-    .main_mobile {
-      display: none;
-    }
-    
-    .sidenav {
-      top: 75px;
-      position: fixed;
-      width: 90%;
-      height: 100vh;
-      background: var(--color-white);
-      transform: translateX(-110%);
-      transition: all 0.5s ease-in-out;
-      z-index: 1;
-    }
+  .sidenav {
+    top: 75px;
+    position: fixed;
+    width: 90%;
+    height: 100vh;
+    background: var(--color-white);
+    transform: translateX(-110%);
+    transition: all 0.5s ease-in-out;
+    z-index: 1;
+  }
 
-    .activeSidenav {
-      top: 75px;
-      position: fixed;
-      width: 90%;
-      height: 100vh;
-      background: var(--color-white);
-      transform: translateX(-80%);
-      transition: all 0.5s ease-in-out;
-      z-index: 1;
+  .activeSidenav {
+    top: 75px;
+    position: fixed;
+    width: 90%;
+    height: 100vh;
+    background: var(--color-white);
+    transform: translateX(-80%);
+    transition: all 0.5s ease-in-out;
+    z-index: 1;
 
     .hamburguer {
       background: transparent;
@@ -53,10 +52,10 @@ export const Container = styled.div`
       max-height: 75px;
       height: 100%;
       display: flex;
-      z-index: 1;
+      z-index: 200;
 
       background-color: var(--color-white);
-      box-shadow: 5px 5px 30px rgba(0,0,0,0.5);
+      box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.5);
     }
 
     .mobile_mobile {
@@ -66,31 +65,30 @@ export const Container = styled.div`
       justify-content: space-between;
       align-items: center;
       padding: 0 1rem;
-
     }
 
     .logo__casa {
       max-width: 120px;
     }
 
-      .sidenav {
-        position: fixed;
-        width: 100%;
-        height: 100vh;
-        background: var(--color-white);
-        transform: translateX(-110%);
-        transition: all 0.5s ease-in-out;
-        z-index: 1;
-      }
+    .sidenav {
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      background: var(--color-white);
+      transform: translateX(-110%);
+      transition: all 0.5s ease-in-out;
+      z-index: 1;
+    }
 
-      .activeSidenav {
-        position: fixed;
-        width: 100%;
-        height: 100vh;
-        background: var(--color-white);
-        transform: translateX(-50%);
-        transition: all 0.5s ease-in-out;
-        z-index: 1;
+    .activeSidenav {
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      background: var(--color-white);
+      transform: translateX(-50%);
+      transition: all 0.5s ease-in-out;
+      z-index: 1;
 
       .hamburguer {
         background: transparent;
