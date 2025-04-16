@@ -18,6 +18,9 @@ import PDF8 from "../../../../assets/transparencia/2025/TF 03-2022 | TA 21-2025/
 import PDF9 from "../../../../assets/transparencia/2025/TF 04-2022 | TA 05-2025/TF 04.2022.pdf";
 import PDF10 from "../../../../assets/transparencia/2025/TF 04-2022 | TA 05-2025/TA 05.2025.pdf";
 
+import PDF11 from "../../../../assets/transparencia/2025/TF 01-2025 | Certidão de Apostilamento 01-2025/TF 01.2025.pdf";
+import PDF12 from "../../../../assets/transparencia/2025/TF 01-2025 | Certidão de Apostilamento 01-2025/cert apostilamento.pdf";
+
 import { MdOutlinePictureAsPdf } from "react-icons/md";
 
 export function Doc2025() {
@@ -108,6 +111,21 @@ export function Doc2025() {
         {
           title: "TA 06/2025",
           link: PDF1,
+          newTab: true,
+        },
+      ],
+    },
+    {
+      name: "TF 01/2025 | Certidão de Apostilamento 01/2025",
+      documents: [
+        {
+          title: "TF 01/2025",
+          link: PDF11,
+          newTab: true,
+        },
+        {
+          title: "Certidão de Apostilamento 01/2025",
+          link: PDF12,
           newTab: true,
         },
       ],
