@@ -44,7 +44,11 @@ export function Servicos() {
             Com uma atuação pautada no compromisso com o bem-estar infantil e
             juvenil, a Casa Lar se dedica a assegurar direitos, promover
             autonomia e criar oportunidades para um futuro mais digno e
-            promissor.
+            promissor. Com este pensamento, desde 2025 se tornou a Organização
+            Certificadora do Centro de Estimulação e Reabilitação Precoce, que
+            tem como objetivo, a implantação, adequação e manutenção do Serviço
+            de Atendimento a Pessoas com Transtorno do Espectro Autista,
+            Síndromes Genéticas e Paralisia Cerebral.
           </p>
         </div>
         <div className={style.card2}>

@@ -45,6 +45,10 @@ export function Home() {
           Jovens, com foco na qualificação e inserção no mundo do trabalho,
           conforme a Lei do Aprendiz nº. 10.097/2000.
         </p>
+        <p>
+          No ano de 2025 se tornou a Organização Certificadora do Centro de
+          Estimulação e Reabilitação Precoce
+        </p>
         <div className="divbotao">
           <Link to="/sobre">
             <button className="btn_noticia" onClick={scrollToTop}>
