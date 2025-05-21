@@ -3,7 +3,7 @@ import { CardTransparencia } from "../card-transparencia";
 import style from "./style.module.css";
 import imgFundo from "../../../assets/fundo-transparencia.png";
 
-import PDF1 from "../../../assets/transparencia/documentosAssociacao/ASSOCIACAO CASA LAR - BP 2022_ASSINADO.pdf";
+import PDF1 from "../../../assets/transparencia/documentosAssociacao/BALANÇO PATRIMONIAL - 2024.pdf";
 import PDF2 from "../../../assets/transparencia/documentosAssociacao/estatuto 12ª alteração.pdf";
 import PDF3 from "../../../assets/transparencia/documentosAssociacao/ata.pdf";
 import PDF4 from "../../../assets/transparencia/documentosAssociacao/Cadastro membros diretoria 25.26.pdf";
