@@ -21,6 +21,8 @@ import PDF10 from "../../../../assets/transparencia/2025/TF 04-2022 | TA 05-2025
 import PDF11 from "../../../../assets/transparencia/2025/TF 01-2025 | Certidão de Apostilamento 01-2025/TF 01.2025.pdf";
 import PDF12 from "../../../../assets/transparencia/2025/TF 01-2025 | Certidão de Apostilamento 01-2025/cert apostilamento.pdf";
 
+import PDF13 from "../../../../assets/transparencia/2025/tf-04-2025.pdf";
+
 import { MdOutlinePictureAsPdf } from "react-icons/md";
 
 export function Doc2025() {
@@ -126,6 +128,16 @@ export function Doc2025() {
         {
           title: "Certidão de Apostilamento 01/2025",
           link: PDF12,
+          newTab: true,
+        },
+      ],
+    },
+    {
+      name: "TF 04/2025",
+      documents: [
+        {
+          title: "TF 04/2025",
+          link: PDF13,
           newTab: true,
         },
       ],
