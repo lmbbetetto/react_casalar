@@ -6,6 +6,8 @@ import { CardNoticia } from "../noticias/cardNoticia";
 
 import FTVL from "../../assets/fotovoltaico.jpeg";
 import CVL from "../../assets/vaolivre.jpeg";
+import CAR from "../../assets/carro-2.jpeg";
+import TRAT from "../../assets/trator.jpeg";
 
 export function Home() {
   const scrollToTop = () => {
@@ -14,6 +16,16 @@ export function Home() {
 
   const noticias = [
     //Adcionar no máximo 5 notícias. Excluir notícias antigas
+    {
+      title: "Aquisição Trator",
+      photo: TRAT,
+      link: "/noticias/aquisicao-trator",
+    },
+    {
+      title: "Aquisição Automóvel",
+      photo: CAR,
+      link: "/noticias/aquisicao-automovel",
+    },
     {
       title: "Instalação Sistema Fotovoltaico",
       photo: FTVL,

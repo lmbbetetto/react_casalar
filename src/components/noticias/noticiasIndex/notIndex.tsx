@@ -6,9 +6,19 @@ import imgFundo from "../../../assets/news-photo.jpg";
 import FVLT from "../../../assets/fotovoltaico.jpeg";
 import CVL from "../../../assets/vaolivre.jpeg";
 import CAR from "../../../assets/carro-2.jpeg";
+import TRAT from "../../../assets/trator.jpeg";
 
 export function NotIndex() {
   const noticias = [
+    {
+      title:
+        "Aquisição de Trator Cortador de Grama através de Emenda Parlamentar",
+      link: "/noticias/aquisicao-trator",
+      paragraph:
+        "Associação Casa Lar recebe trator cortador de grama por meio de emenda parlamentar Em agosto de 2025, a Associação Casa Lar foi beneficiada...",
+      photo: TRAT,
+      date: "27/09/2025 - Andréia Oliveira",
+    },
     {
       title: "Aquisição de Automóvel através de Emenda Parlamentar",
       link: "/noticias/aquisicao-automovel",
