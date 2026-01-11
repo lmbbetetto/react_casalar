@@ -19,6 +19,7 @@ import { Doc2022 } from "./components/transparencia/prestacao-contas/2022/2022";
 import { Doc2023 } from "./components/transparencia/prestacao-contas/2023/2023";
 import { Doc2024 } from "./components/transparencia/prestacao-contas/2024/2024";
 import { Doc2025 } from "./components/transparencia/prestacao-contas/2025/2025";
+import { Doc2026 } from "./components/transparencia/prestacao-contas/2026/2026";
 import { Servicos } from "./components/about/servicos/servicos";
 import { Colaboradores } from "./components/about/colaboradores/colaboradores";
 import { Diretoria } from "./components/about/diretoria/diretoria";
@@ -70,6 +71,10 @@ function App() {
         <Route
           path="/transparencia/prestacao-contas/documentos-2025"
           element={<Doc2025 />}
+        />
+        <Route
+          path="/transparencia/prestacao-contas/documentos-2026"
+          element={<Doc2026 />}
         />
         <Route
           path="/transparencia/prestacao-contas/documentos-2025/colaboradores"

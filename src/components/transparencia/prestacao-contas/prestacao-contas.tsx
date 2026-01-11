@@ -26,6 +26,11 @@ export function DocPrestacaoContas() {
       link: "/transparencia/prestacao-contas/documentos-2025",
       newTab: false,
     },
+    {
+      title: "2026",
+      link: "/transparencia/prestacao-contas/documentos-2026",
+      newTab: false,
+    },
   ];
   return (
     <>

@@ -1,44 +1,30 @@
 import "./styles.css";
+import { useEffect, useState, useRef } from "react";
 import imgFundo from "../../assets/fundo_home.jpg";
 
 import { Link } from "react-router-dom";
 import { CardNoticia } from "../noticias/cardNoticia";
 
-import FTVL from "../../assets/fotovoltaico.jpeg";
-import CVL from "../../assets/vaolivre.jpeg";
-import CAR from "../../assets/carro-2.jpeg";
-import TRAT from "../../assets/trator.jpeg";
+import { Modal } from "../component/modal/modal";
+import { noticias } from "./mock";
+import { IconChevronLeft, IconChevronRight } from "@tabler/icons-react";
 
 export function Home() {
+  const [showModal, setShowModal] = useState(false);
+
+  const carouselRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    setShowModal(true);
+  }, []);
+
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
-  const noticias = [
-    //Adcionar no máximo 5 notícias. Excluir notícias antigas
-    {
-      title: "Aquisição Trator",
-      photo: TRAT,
-      link: "/noticias/aquisicao-trator",
-    },
-    {
-      title: "Aquisição Automóvel",
-      photo: CAR,
-      link: "/noticias/aquisicao-automovel",
-    },
-    {
-      title: "Instalação Sistema Fotovoltaico",
-      photo: FTVL,
-      link: "/noticias/fotovoltaico",
-    },
-    {
-      title: "Construção Cobertura Vão Livre",
-      photo: CVL,
-      link: "/noticias/vaolivre",
-    },
-  ];
   return (
     <>
+      {showModal && <Modal onClose={() => setShowModal(false)} />}
       <div className="img_fundo">
         <img src={imgFundo} alt="Imagem de fundo" className="imgHome" />
       </div>
@@ -71,41 +57,69 @@ export function Home() {
       </div>
 
       <section className="container2">
-        <section className="sobre2Home">
+        {/* NOTÍCIAS */}
+        <section className="noticiasHome">
           <div className="internaHome">
             <div className="titulo">
               <h1>Últimas notícias</h1>
             </div>
-            <div className="cards">
-              {noticias.map((component, index) => (
-                <CardNoticia
-                  key={index}
-                  title={component.title}
-                  link={component.link}
-                  photo={component.photo}
-                />
-              ))}
+
+            <div className="carousel-wrapper">
+              <button
+                className="carousel-btn left"
+                onClick={() =>
+                  carouselRef.current?.scrollBy({
+                    left: -320,
+                    behavior: "smooth",
+                  })
+                }
+              >
+                <IconChevronLeft />
+              </button>
+
+              <div className="carousel" ref={carouselRef}>
+                {noticias.map((component, index) => (
+                  <CardNoticia
+                    key={index}
+                    title={component.title}
+                    link={component.link}
+                    photo={component.photo}
+                    description={component.description}
+                  />
+                ))}
+              </div>
+
+              <button
+                className="carousel-btn right"
+                onClick={() =>
+                  carouselRef.current?.scrollBy({
+                    left: 320,
+                    behavior: "smooth",
+                  })
+                }
+              >
+                <IconChevronRight />
+              </button>
             </div>
           </div>
         </section>
 
-        <section>
-          <div className="internaHome">
+        {/* TRANSPARÊNCIA */}
+        <section className="transparenciaHome">
+          <div className="internaHome transparenciaBox">
             <div className="titulo">
               <h1>Transparência</h1>
             </div>
-            <div className="cards">
-              <p>
-                A Casa Lar, tem a transparência como um princípio, por isso,
-                disponibilizamos nossos relatórios, balanços e convênios com o
-                poder público !
-              </p>
-            </div>
+
+            <p>
+              A Casa Lar tem a transparência como um princípio, por isso,
+              disponibilizamos nossos relatórios, balanços e convênios com o
+              poder público!
+            </p>
+
             <div className="divbotao">
               <Link to="/transparencia">
-                <button className="btn_noticia" onClick={scrollToTop}>
-                  Transparência
-                </button>
+                <button className="btn_noticia">Transparência</button>
               </Link>
             </div>
           </div>

@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { Link } from "react-router-dom";
 import style from "./styles.module.css";
 
@@ -6,31 +5,31 @@ interface CardNoticias {
   link: string;
   title: string;
   photo: string;
+  description?: string;
 }
 
-export const CardNoticia: React.FC<CardNoticias> = ({ link, title, photo }) => {
-  const [isHovered, setIsHovered] = useState(false);
-
-  const scrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  };
-
+export const CardNoticia: React.FC<CardNoticias> = ({
+  link,
+  title,
+  photo,
+  description,
+}) => {
   return (
-    <Link to={link}>
-      <div
-        className={style.imageWrapper}
-        onMouseEnter={() => setIsHovered(true)}
-        onMouseLeave={() => setIsHovered(false)}
-      >
+    <div className={style.card}>
+      <span className={style.badge}>Novidade</span>
+
+      <div className={style.imageWrapper}>
         <img src={photo} alt={title} />
-        {isHovered && (
-          <div className={style.overlay}>
-            <div className={style.titulo}>
-              <h1>{title}</h1>
-            </div>
-          </div>
-        )}
       </div>
-    </Link>
+
+      <div className={style.content}>
+        <h3>{title}</h3>
+        <p>{description}</p>
+
+        <Link to={link} className={style.button}>
+          Leia mais...
+        </Link>
+      </div>
+    </div>
   );
 };

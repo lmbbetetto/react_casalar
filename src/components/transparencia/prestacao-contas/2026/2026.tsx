@@ -5,9 +5,9 @@ import style from "./style.module.css";
 import imgFundo from "../../../../assets/fundo-transparencia.png";
 
 import { MdOutlinePictureAsPdf } from "react-icons/md";
-import { documents2025 } from "./mock";
+import { documents2026 } from "./mock";
 
-export function Doc2025() {
+export function Doc2026() {
   return (
     <>
       <div className={style.titulo}>
@@ -30,7 +30,7 @@ export function Doc2025() {
           </span>
           !
         </h1>
-        {documents2025.map((group, groupIndex) => (
+        {documents2026.map((group, groupIndex) => (
           <div key={groupIndex} className={style.fomento}>
             <h1 className={style.titleFomento}>{group.name}</h1>
             <div className={style.cards}>
