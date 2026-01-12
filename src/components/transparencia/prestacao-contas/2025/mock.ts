@@ -17,6 +17,9 @@ import PDF12 from "../../../../assets/transparencia/2025/TF 01-2025 _ Certidão 
 
 import PDF13 from "../../../../assets/transparencia/2025/tf-04-2025.pdf";
 
+import PDF14 from "../../../../assets/transparencia/2025/ta-31-2025.pdf";
+import PDF15 from "../../../../assets/transparencia/2025/tf-12-2025.pdf";
+
 export const documents2025 = [
   {
     name: "Colaboradores e Diretoria",
@@ -34,7 +37,7 @@ export const documents2025 = [
     ],
   },
   {
-    name: "TF 01/2022 | TA 07/2025",
+    name: "TF 01/2022 | TA 07/2025 | TA 31/2025",
     documents: [
       {
         title: "TF 01/2022",
@@ -44,6 +47,11 @@ export const documents2025 = [
       {
         title: "TA 07/2025",
         link: PDF2,
+        newTab: true,
+      },
+      {
+        title: "TA 31/2025",
+        link: PDF14,
         newTab: true,
       },
     ],
@@ -129,6 +137,16 @@ export const documents2025 = [
       {
         title: "TF 04/2025",
         link: PDF13,
+        newTab: true,
+      },
+    ],
+  },
+  {
+    name: "TF 12/2025",
+    documents: [
+      {
+        title: "TF 12/2025",
+        link: PDF15,
         newTab: true,
       },
     ],
