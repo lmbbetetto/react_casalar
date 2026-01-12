@@ -17,8 +17,8 @@ import PDF12 from "../../../../assets/transparencia/2025/TF 01-2025 _ Certidão 
 
 import PDF13 from "../../../../assets/transparencia/2025/tf-04-2025.pdf";
 
-import PDF14 from "../../../../assets/transparencia/2025/ta-31-2025.pdf";
-import PDF15 from "../../../../assets/transparencia/2025/tf-12-2025.pdf";
+import PDF14 from "../../../../assets/transparencia/2025/TA-31-2025.pdf";
+import PDF15 from "../../../../assets/transparencia/2025/TF-12-2025.pdf";
 
 export const documents2025 = [
   {
