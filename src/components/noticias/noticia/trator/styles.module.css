@@ -51,6 +51,16 @@
   max-width: 90%;
 }
 
+.swiper-button-prev {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: none;
+
+  background: #1f8f4a;
+  color: #ffffff;
+}
+
 @media (max-width: 720px) {
   .img_fundo img {
     height: 22rem;

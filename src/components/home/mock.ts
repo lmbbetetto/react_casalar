@@ -2,8 +2,16 @@ import FTVL from "../../assets/fotovoltaico.jpeg";
 import CVL from "../../assets/vaolivre.jpeg";
 import CAR from "../../assets/carro-2.jpeg";
 import TRAT from "../../assets/trator.jpeg";
+import VAGAS from "../../assets/vagas.png";
 
 export const noticias = [
+  {
+    title: "Processo Seletivo – Clínica de Reabilitação e Estimulação Precoce",
+    photo: VAGAS,
+    link: "/noticias/vagas-emprego",
+    description:
+      "A Associação Casa Lar divulga a abertura do Processo Seletivo para atuação na Clínica de Reabilitação e Estimulação Precoce, com vagas em regime CLT para diferentes áreas profissionais.",
+  },
   {
     title: "Aquisição Trator",
     photo: TRAT,

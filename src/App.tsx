@@ -26,6 +26,7 @@ import { Diretoria } from "./components/about/diretoria/diretoria";
 import { Fotos } from "./components/about/fotos/fotos";
 import { Automovel } from "./components/noticias/noticia/carro";
 import { Trator } from "./components/noticias/noticia/trator";
+import { Vagas } from "./components/noticias/noticia/vagas";
 
 function App() {
   return (
@@ -45,6 +46,7 @@ function App() {
         <Route path="/noticias/fotovoltaico" element={<Fotovoltaico />} />
         <Route path="/noticias/aquisicao-automovel" element={<Automovel />} />
         <Route path="/noticias/aquisicao-trator" element={<Trator />} />
+        <Route path="/noticias/vagas-emprego" element={<Vagas />} />
 
         {/* Transparência */}
         <Route path="/transparencia" element={<Transparencia />} />

@@ -9,12 +9,13 @@ import { Navigation, Pagination } from "swiper/modules";
 
 import IMG1 from "../../../../assets/trator.jpeg";
 import IMG2 from "../../../../assets/trator-1.jpg";
+import { IconChevronLeft, IconChevronRight } from "@tabler/icons-react";
 
 const images = [IMG1, IMG2];
 
 export function Trator() {
   return (
-    <>
+    <>      
       <Swiper
         modules={[Navigation, Pagination]}
         spaceBetween={50}
