@@ -4,10 +4,18 @@
   z-index: -1;
 }
 
-/* ===== HISTÓRIA ===== */
-.sobreHome {
+/* ==== GRADE HOME ===== */
+
+.sec_home {
   width: 86%;
   margin: -3rem auto 0;
+  display: grid;
+  grid-template-columns: 7fr 3fr;
+  gap: 2rem;
+}
+
+/* ===== HISTÓRIA ===== */
+.sobreHome {
   padding: 4rem 8rem;
   text-align: center;
 
@@ -20,6 +28,25 @@
 
 .sobreHome p {
   color: #000;
+}
+
+/* ===== TRANSPARÊNCIA ===== */
+.transparenciaHome {
+  display: flex;
+  justify-content: center;
+}
+
+.transparenciaBox {
+  max-width: 520px;
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.divbotao-transp {
+  margin-top: auto;
 }
 
 /* ===== CONTAINER PRINCIPAL ===== */
@@ -141,20 +168,6 @@
 
 .carousel-btn.right {
   right: 0;
-}
-
-/* ===== TRANSPARÊNCIA ===== */
-.transparenciaHome {
-  display: flex;
-  justify-content: center;
-  color: #000;
-}
-
-.transparenciaBox {
-  max-width: 520px;
-  text-align: center;
-
-  color: #000;
 }
 
 /* ===== BOTÕES ===== */
