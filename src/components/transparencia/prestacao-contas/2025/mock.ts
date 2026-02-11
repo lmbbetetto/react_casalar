@@ -167,7 +167,7 @@ export const documents2025 = [
     name: "Termo de Colaboração 02/2025",
     documents: [
       {
-        title: "Termo de Colaboração 19/2025",
+        title: "Termo de Colaboração 02/2025",
         link: PDF17,
         newTab: true,
       },
