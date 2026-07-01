@@ -29,6 +29,9 @@ import PDF24 from "../../../../assets/transparencia/2025/07-2026/RP 10 - EMENDA 
 import PDF25 from "../../../../assets/transparencia/2025/07-2026/RP 10 - acolh. municipal - anual - TARJA.pdf";
 import PDF26 from "../../../../assets/transparencia/2025/07-2026/RP 10 anual - Acolh. Estadual - TARJA.pdf";
 
+import PDF27 from "../../../../assets/transparencia/2025/07-2026/RP10 TEA 2025..pdf";
+import PDF28 from "../../../../assets/transparencia/2025/07-2026/Termo de Fomento 001-2025-1.pdf";
+
 export const documents2025 = [
   {
     name: "Colaboradores e Diretoria",
@@ -201,6 +204,21 @@ export const documents2025 = [
     ],
   },
   {
+    name: "TF 01/2025",
+    documents: [
+      {
+        title: "TF 01/2025",
+        link: PDF28,
+        newTab: true,
+      },
+      {
+        title: "RP 10 - TEA Anual",
+        link: PDF27,
+        newTab: true,
+      },
+    ],
+  },
+  {
     name: "Termo de Colaboração 02/2025",
     documents: [
       {
@@ -210,4 +228,14 @@ export const documents2025 = [
       },
     ],
   },
+  // {
+  //   name: "Relatórios",
+  //   documents: [
+  //     {
+  //       title: "Termo de Colaboração 02/2025",
+  //       link: PDF17,
+  //       newTab: true,
+  //     },
+  //   ],
+  // },
 ];
