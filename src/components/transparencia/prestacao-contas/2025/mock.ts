@@ -22,6 +22,13 @@ import PDF15 from "../../../../assets/transparencia/2025/TF-12-2025.pdf";
 import PDF16 from "../../../../assets/transparencia/2025/TF 19 2025 - SITE PREF..pdf";
 import PDF17 from "../../../../assets/transparencia/2025/colab-2025.pdf";
 
+import PDF21 from "../../../../assets/transparencia/2025/07-2026/RP 10 - ACOLH. FEDERAL - ANUAL - TARJA.pdf";
+import PDF22 from "../../../../assets/transparencia/2025/07-2026/RP 10 - APRENDIZ - ANUAL - TARJA.pdf";
+import PDF23 from "../../../../assets/transparencia/2025/07-2026/RP 10 - CARA - ANUAL - TARJA.pdf";
+import PDF24 from "../../../../assets/transparencia/2025/07-2026/RP 10 - EMENDA CARA - ANUAL - TARJA.pdf";
+import PDF25 from "../../../../assets/transparencia/2025/07-2026/RP 10 - acolh. municipal - anual - TARJA.pdf";
+import PDF26 from "../../../../assets/transparencia/2025/07-2026/RP 10 anual - Acolh. Estadual - TARJA.pdf";
+
 export const documents2025 = [
   {
     name: "Colaboradores e Diretoria",
@@ -56,6 +63,11 @@ export const documents2025 = [
         link: PDF14,
         newTab: true,
       },
+      {
+        title: "RP 10 - Anual",
+        link: PDF26,
+        newTab: true,
+      },
     ],
   },
   {
@@ -69,6 +81,16 @@ export const documents2025 = [
       {
         title: "TA 08/2025",
         link: PDF6,
+        newTab: true,
+      },
+      {
+        title: "RP 10 - Acolhimento Municipal Anual",
+        link: PDF25,
+        newTab: true,
+      },
+      {
+        title: "RP 10 - Aprendiz Anual",
+        link: PDF22,
         newTab: true,
       },
     ],
@@ -101,6 +123,11 @@ export const documents2025 = [
         link: PDF10,
         newTab: true,
       },
+      {
+        title: "RP 10 - C.A.R.A. Anual",
+        link: PDF23,
+        newTab: true,
+      },
     ],
   },
   {
@@ -114,6 +141,11 @@ export const documents2025 = [
       {
         title: "TA 06/2025",
         link: PDF1,
+        newTab: true,
+      },
+      {
+        title: "RP 10 - Acolhimento Federal Anual",
+        link: PDF21,
         newTab: true,
       },
     ],
@@ -139,6 +171,11 @@ export const documents2025 = [
       {
         title: "TF 04/2025",
         link: PDF13,
+        newTab: true,
+      },
+      {
+        title: "RP 10 - Emenda C.A.R.A. Anual",
+        link: PDF24,
         newTab: true,
       },
     ],

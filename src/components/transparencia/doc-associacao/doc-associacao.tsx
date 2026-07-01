@@ -3,31 +3,10 @@ import { CardTransparencia } from "../card-transparencia";
 import style from "./style.module.css";
 import imgFundo from "../../../assets/fundo-transparencia.png";
 
-import PDF1 from "../../../assets/transparencia/documentosAssociacao/BALANÇO PATRIMONIAL - 2024.pdf";
-import PDF2 from "../../../assets/transparencia/documentosAssociacao/estatuto 12ª alteração.pdf";
-import PDF3 from "../../../assets/transparencia/documentosAssociacao/ata.pdf";
-import PDF4 from "../../../assets/transparencia/documentosAssociacao/Cadastro membros diretoria 25.26.pdf";
 import { MdOutlinePictureAsPdf } from "react-icons/md";
+import { documentsAssociacao } from "./mock";
 
 export function DocAssociacao() {
-  const documents = [
-    {
-      title: "Balanço Patrimonial",
-      link: PDF1,
-    },
-    {
-      title: "Ata Alteração e Consolidação 12º Estatuto",
-      link: PDF2,
-    },
-    {
-      title: "Ata Eleição e Posse - 2025 e 2026",
-      link: PDF3,
-    },
-    {
-      title: "Termo de Posse - 2025 e 2026",
-      link: PDF4,
-    },
-  ];
   return (
     <>
       <div className={style.titulo}>
@@ -51,7 +30,7 @@ export function DocAssociacao() {
           !
         </h1>
         <div className={style.cards}>
-          {documents.map((component, index) => (
+          {documentsAssociacao.map((component, index) => (
             <CardTransparencia
               key={index}
               title={component.title}
