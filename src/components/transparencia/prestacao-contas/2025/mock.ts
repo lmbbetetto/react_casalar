@@ -32,6 +32,19 @@ import PDF26 from "../../../../assets/transparencia/2025/07-2026/RP 10 anual - A
 import PDF27 from "../../../../assets/transparencia/2025/07-2026/RP10 TEA 2025..pdf";
 import PDF28 from "../../../../assets/transparencia/2025/07-2026/Termo de Fomento 001-2025-1.pdf";
 
+import PDF29 from "../../../../assets/transparencia/2025/relatorios/Relatório de atividades 1° quadrimestre 2025.pdf";
+import PDF30 from "../../../../assets/transparencia/2025/relatorios/Rel 1 Quadrimestre 2025.pdf";
+import PDF31 from "../../../../assets/transparencia/2025/relatorios/Rel Fotog 1 quadrimestre.pdf";
+import PDF38 from "../../../../assets/transparencia/2025/relatorios/Relatorio de atividades TEA 1 quadrim. 2025.pdf";
+
+import PDF32 from "../../../../assets/transparencia/2025/relatorios/2025 - 2º quad. - RELATORIO_DE_ATIVIDADES.pdf";
+import PDF33 from "../../../../assets/transparencia/2025/relatorios/CARA - 2º QUADRIMESTRE atualizado.pdf";
+import PDF34 from "../../../../assets/transparencia/2025/relatorios/CARA - Relatorio_Fotografico_Mai-Ago_2025.pdf";
+
+import PDF35 from "../../../../assets/transparencia/2025/relatorios/RELATORIO_DE_ATIVIDADES_ANUAL_DE_2025_assinado_assinado_assinado.pdf";
+import PDF36 from "../../../../assets/transparencia/2025/relatorios/ANUAL_assinado.pdf";
+import PDF37 from "../../../../assets/transparencia/2025/relatorios/Relatorio_Fotografico_Geral_2025_assinado.pdf";
+
 export const documents2025 = [
   {
     name: "Colaboradores e Diretoria",
@@ -45,6 +58,71 @@ export const documents2025 = [
         title: "Colaboradores",
         link: "/transparencia/prestacao-contas/documentos-2025/colaboradores",
         newTab: false,
+      },
+    ],
+  },
+  {
+    name: "Relatório Primeiro Quadrimestre",
+    documents: [
+      {
+        title: "Primeiro Quadrimestre - Acolhimento",
+        link: PDF29,
+        newTab: true,
+      },
+      {
+        title: "Primeiro Quadrimestre - SCFV",
+        link: PDF30,
+        newTab: true,
+      },
+      {
+        title: "Relatório Fotográfico - SCFV",
+        link: PDF31,
+        newTab: true,
+      },
+      {
+        title: "Primeiro Quadrimestre - TEA",
+        link: PDF38,
+        newTab: true,
+      },
+    ],
+  },
+  {
+    name: "Relatório Segundo Quadrimestre",
+    documents: [
+      {
+        title: "Segundo Quadrimestre - Acolhimento",
+        link: PDF32,
+        newTab: true,
+      },
+      {
+        title: "Segundo Quadrimestre - SCFV",
+        link: PDF33,
+        newTab: true,
+      },
+      {
+        title: "Relatório Fotográfico - SCFV",
+        link: PDF34,
+        newTab: true,
+      },
+    ],
+  },
+  {
+    name: "Relatório Anual",
+    documents: [
+      {
+        title: "Relatório Anual - Acolhimento",
+        link: PDF35,
+        newTab: true,
+      },
+      {
+        title: "Relatório Anual - SCFV",
+        link: PDF36,
+        newTab: true,
+      },
+      {
+        title: "Relatório Fotográfico - SCFV",
+        link: PDF37,
+        newTab: true,
       },
     ],
   },
@@ -228,14 +306,4 @@ export const documents2025 = [
       },
     ],
   },
-  // {
-  //   name: "Relatórios",
-  //   documents: [
-  //     {
-  //       title: "Termo de Colaboração 02/2025",
-  //       link: PDF17,
-  //       newTab: true,
-  //     },
-  //   ],
-  // },
 ];
