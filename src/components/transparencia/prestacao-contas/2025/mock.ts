@@ -40,10 +40,12 @@ import PDF38 from "../../../../assets/transparencia/2025/relatorios/Relatorio de
 import PDF32 from "../../../../assets/transparencia/2025/relatorios/2025 - 2º quad. - RELATORIO_DE_ATIVIDADES.pdf";
 import PDF33 from "../../../../assets/transparencia/2025/relatorios/CARA - 2º QUADRIMESTRE atualizado.pdf";
 import PDF34 from "../../../../assets/transparencia/2025/relatorios/CARA - Relatorio_Fotografico_Mai-Ago_2025.pdf";
+import PDF39 from "../../../../assets/transparencia/2025/relatorios/tea/Relatorio de atividades TEA 2 quadrim. 2025.pdf";
 
 import PDF35 from "../../../../assets/transparencia/2025/relatorios/RELATORIO_DE_ATIVIDADES_ANUAL_DE_2025_assinado_assinado_assinado.pdf";
 import PDF36 from "../../../../assets/transparencia/2025/relatorios/ANUAL_assinado.pdf";
 import PDF37 from "../../../../assets/transparencia/2025/relatorios/Relatorio_Fotografico_Geral_2025_assinado.pdf";
+import PDF40 from "../../../../assets/transparencia/2025/relatorios/tea/relatorio anual atividades TEA 2025.pdf";
 
 export const documents2025 = [
   {
@@ -104,6 +106,11 @@ export const documents2025 = [
         link: PDF34,
         newTab: true,
       },
+      {
+        title: "Segundo Quadrimestre - TEA",
+        link: PDF39,
+        newTab: true,
+      },
     ],
   },
   {
@@ -122,6 +129,11 @@ export const documents2025 = [
       {
         title: "Relatório Fotográfico - SCFV",
         link: PDF37,
+        newTab: true,
+      },
+      {
+        title: "Ralatório Anual - TEA",
+        link: PDF40,
         newTab: true,
       },
     ],
