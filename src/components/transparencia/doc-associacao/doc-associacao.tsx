@@ -4,7 +4,7 @@ import style from "./style.module.css";
 import imgFundo from "../../../assets/fundo-transparencia.png";
 
 import { MdOutlinePictureAsPdf } from "react-icons/md";
-import { documentsAssociacao } from "./mock";
+import { documentsAssociacao, documentsAssociacao1 } from "./mock";
 
 export function DocAssociacao() {
   return (
@@ -29,16 +29,22 @@ export function DocAssociacao() {
           </span>
           !
         </h1>
-        <div className={style.cards}>
-          {documentsAssociacao.map((component, index) => (
-            <CardTransparencia
-              key={index}
-              title={component.title}
-              link={component.link}
-              icon={<MdOutlinePictureAsPdf />}
-            />
-          ))}
-        </div>
+        {documentsAssociacao1.map((group, groupIndex) => (
+          <div key={groupIndex} className={style.fomento}>
+            <h1 className={style.titleFomento}>{group.name}</h1>
+            <div className={style.cards}>
+              {group.documents.map((document, docIndex) => (
+                <CardTransparencia
+                  key={`${groupIndex}-${docIndex}`}
+                  title={document.title}
+                  link={document.link}
+                  newTab={document.newTab}
+                  icon={<MdOutlinePictureAsPdf />}
+                />
+              ))}
+            </div>
+          </div>
+        ))}
       </div>
     </>
   );
